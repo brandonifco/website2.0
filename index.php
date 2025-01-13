@@ -1,18 +1,13 @@
 <?php
-// Include the header file
 include 'header.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <?php include 'styles.php'; ?>
 </head>
-
 <body>
     <!-- Main Content Area -->
     <div id="main-content">
@@ -69,12 +64,8 @@ include 'header.php';
             </section><br>
         </div>
     </div>
-
 </body>
-
 </html>
-
 <?php
-// Include the footer file
 include 'footer.php';
 ?>

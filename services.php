@@ -59,8 +59,8 @@ include 'header.php';
             <h3>Benefits of Invisible Fence®</h3>
             <ul data-content="services.containmentSystems.benefits"></ul><br>
             <h3>Our Services</h3>
-            <ul data-content="services.containmentSystems.services"></ul>
-            <p data-content="services.containmentSystems.cta"></p>
+            <ul data-content="services.containmentSystems.services"></ul><br>
+            <a href="schedule.php"><p data-content="services.containmentSystems.cta"></p></a>
         <br></section>
         <br>
     </section><br>

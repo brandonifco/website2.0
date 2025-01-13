@@ -1,0 +1,59 @@
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--foreground-color);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--foreground-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--foreground-color);
+    text-decoration: underline;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* Create 4 columns with width determined by content */
+    justify-content: space-between; /* Distribute columns evenly across the footer */
+    margin: 0 auto;
+    text-align: center;
+    place-items: center;
+    gap: 20px; /* Add spacing between columns */
+    width: 80%; /* Ensure the footer spans the entire width */
+}
+
+.footer-container > div,
+.footer-container > p {
+    padding: 1px;
+    margin: 0 auto;
+}
+.footer-trust-indicators img {
+    max-width: 200px;
+    gap: 20px;
+}
+.footer-social-media-links img {
+    display: block;
+    width: 50px;
+    height: auto;
+    padding: 5px;
+    margin: 0 auto;
+}
+.footer-sitemap a {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-awards li {
+    list-style: none;
+}
+
+@media (max-width: 1168px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+}
+

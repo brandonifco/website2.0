@@ -3,12 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2vh 20px; /* Vertical padding scales with viewport */
+    padding: 30px; /* Vertical padding scales with viewport */
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     position: sticky;
     top: 30px;
-    height: 10vh; /* Header height is 10% of the viewport height */
+/*    height: 10vh; /* Header height is 10% of the viewport height */
     width: 100%;
     min-height: 60px; /* Ensure a minimum height for smaller screens */
     max-height: 100px; /* Optionally, cap the maximum height */
@@ -47,6 +47,7 @@
 
 .desktop ul li::before {
     content: '';
+    list-style: none;
 }
 
 .desktop-menu li a:hover {
@@ -92,7 +93,7 @@
     color: #333;
     z-index: 1001; /* Above the mobile menu */
     position: fixed; /* Fix to the viewport */
-    top: 7%; /* Adjust vertical position */
+    top: 10%; /* Adjust vertical position */
     right: 5%; /* Scales distance from the right with screen size */
 }
 

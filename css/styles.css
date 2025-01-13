@@ -96,24 +96,15 @@ a:hover {
 }
 
 .content-container a {
-    display: inline-block;
-    /* Make it behave like a button */
-    padding: 10px 20px;
-    /* Add inner spacing */
-    border-radius: var(--border-radius);
-    /* Rounded corners */
-    background-color: var(--button-color);
-    /* Use your defined button color */
-    color: var(--foreground-color);
-    /* Text color */
-    text-align: center;
-    /* Center text within the button */
-    text-decoration: none;
-    /* Remove underline */
-    box-shadow: var(--box-shadow);
-    /* Add shadow for depth */
-    transition: background-color 0.3s, box-shadow 0.3s;
-    /* Smooth transitions */
+    display: inline-block;    /* Make it behave like a button */
+/*    padding: 10px 20px;    /* Add inner spacing */
+    border-radius: var(--border-radius);    /* Rounded corners */
+    background-color: var(--button-color);    /* Use your defined button color */
+    color: var(--foreground-color);    /* Text color */
+    text-align: center;    /* Center text within the button */
+    text-decoration: none;    /* Remove underline */
+/*    box-shadow: var(--box-shadow);    /* Add shadow for depth */
+/*    transition: background-color 0.3s, box-shadow 0.3s;    /* Smooth transitions */
 }
 
 .content-container a:hover {
@@ -123,6 +114,19 @@ a:hover {
     /* Enhance shadow on hover */
     color: #fff;
     /* Ensure readability */
+}
+.content-container ul li::before {
+    content: '';
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: url('../images/paw_print_blue.png') no-repeat;
+    background-size: 15px 15px;    /* Adjust size for a small bullet */
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 9;    /* Aligns the bullet with the first line */
 }
 
 /* Hero Section Without Background */
@@ -174,7 +178,6 @@ a:hover {
     margin-bottom: 20px;
     letter-spacing: 4px;
     padding: auto;
-    gap: 20px;
 }
 
 .hero .cta-buttons a {
@@ -232,8 +235,7 @@ h2 {
     width: fit-content; /* Optional: Shrinks <a> to content size */
 }
 .reg ul {
-    list-style: none;
-    /* Remove default bullets */
+    list-style: none;    /* Remove default bullets */
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -242,10 +244,6 @@ h2 {
     position: relative;
     padding-left: 20px; /* Space for the bullet image */
   }
-
-.reg h3 {
-    padding-left: 1%;
-}
 
 .reg p {
     padding-left: 15%;
@@ -267,22 +265,6 @@ h2 {
 #about-us {
     box-shadow: var(--box-shadow);
     padding: 60px 40px;
-}
-
-ul li::before {
-    content: none;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background: url('../images/paw_print_blue.png') no-repeat;
-    background-size: 15px 15px;
-    /* Adjust size for a small bullet */
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 0;
-    top: 9;
-    /* Aligns the bullet with the first line */
 }
 
 #map {
@@ -333,16 +315,23 @@ ul li::before {
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
+.service-card h3 a {
+    display: inline-block; /* Ensures the link is treated like a block */
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    overflow: hidden; /* Hides overflowing text */
+    text-overflow: ellipsis; /* Adds "..." to indicate truncated text */
+    max-width: 100%; /* Ensures it respects the container width */
+}
 
 .service-card p {
     margin-bottom: 20px;
     color: var(--muted-text-color);
 }
 
-.service-card a {
+/*.service-card a {
     color: var(--foreground-color);
     letter-spacing: 4px;
-}
+}*/
 
 /* Testimonials */
 .testimonial {
@@ -371,23 +360,6 @@ ul li::before {
     font-size: 1.1rem;
 }
 
-/* Footer */
-footer {
-    background-color: var(--secondary-color);
-    color: var(--foreground-color);
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: var(--foreground-color);
-    text-decoration: underline;
-}
-
-footer a:hover {
-    color: #ddd;
-}
-
 #about-us {
     text-align: center;
     margin-bottom: 20px;
@@ -410,7 +382,7 @@ footer a:hover {
     /* Ensure padding is included in width calculations */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1168px) {
     .content-container {
         max-width: 90%;
         /* Slightly smaller for mobile */

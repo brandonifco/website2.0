@@ -1,8 +1,11 @@
 <?php
-// Start of header.php
 ?>
 <link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/theme_3.css">
 <link rel="stylesheet" href="fonts/fonts.css">
+<link href="https://db.onlinewebfonts.com/c/c373d9005cc5dfa6115be09d6d1a6dc9?family=Rockwell+Nova+W07+Extra+Bold" rel="stylesheet">
 
 <header class="site-header">
     <!-- Logo -->
@@ -25,10 +28,8 @@
     </nav>
 </header>
 
-
 <script src="js/header.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/dynamic-content.js"></script>
 <?php
-// End of header.php
 ?>

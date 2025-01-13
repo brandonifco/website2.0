@@ -76,9 +76,8 @@ function populateContent(content) {
                         // Handle service overview cards
                         return `
                             <div class="service-card">
-                                <h2>${item.title}</h2>
+                                <a href="${item.url}"><h3>${item.title}</h3></a>
                                 <p>${item.description}</p>
-                                <a href="${item.url}">LEARN MORE</a>
                             </div>`;
                     } else if (item.title && item.description) {
                         // Handle items with title and description (e.g., issuesAddressed)
@@ -89,7 +88,7 @@ function populateContent(content) {
                             </div>`;
                     } else if (item.label && item.url) {
                         // Handle menu links and sitemap links
-                        return `<li><a href="${item.url}">${item.label}</a></li>`;
+                        return `<a href="${item.url}">${item.label}</a><br>`;
                     } else if (item.text && item.author) {
                         // Handle testimonials
                         return `
