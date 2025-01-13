@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #455A64; /* Grayish-blue */
+    --primary-hover-color: #37474F; /* Darker gray-blue */
+    --secondary-color: #66BB6A; /* Softer green */
+    --background-color: rgba(247, 247, 247, 0.75); /* Semi-transparent very light gray */
+    --foreground-color: rgba(255, 255, 255, 0.75); /* Semi-transparent white */
+    --text-color: #37474F; /* Dark grayish-blue for text */
+    --text-shadow: -2px 2px 5px rgba(255, 255, 255, 0.3);/* Shadow to the lower-left side*/
+    --muted-text-color: #607D8B; /* Muted blue-gray */
+    --link-color: #66BB6A; /* Green for links */
+    --link-hover-color: #558B2F; /* Darker green hover */
+    --button-color: #66BB6A; /* Soft green buttons */
+    --button-hover-color: #558B2F; /* Dark green hover */
+    --font-family: 'Roboto', sans-serif; /* Modern sans-serif */
+    --heading-font-size: 4rem;
+    --paragraph-font-size: 1.5rem;
+    --border-radius: 6px;
+    --box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);/* Shadow to the lower-left side*/
+}

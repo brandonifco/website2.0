@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #1F3A93; /* Deep navy blue */
+    --primary-hover-color: #14274D; /* Slightly darker navy */
+    --secondary-color: #28A745; /* Green accent */
+    --background-color: #FFFFFF; /* Pure white */
+    --foreground-color: #F9F9F9; /* Light gray for sections */
+    --text-color: #1F3A93; /* Navy for text */
+    --muted-text-color: #555555; /* Neutral muted text */
+    --link-color: #28A745; /* Green for links */
+    --link-hover-color: #1E7E34; /* Slightly darker green */
+    --button-color: #28A745; /* Green buttons */
+    --button-hover-color: #1E7E34; /* Darker green for hover */
+    --font-family: 'Georgia', serif; /* Serif for headings */
+    --heading-font-size: 2.5rem;
+    --paragraph-font-size: 1.2rem;
+    --border-radius: 5px;
+}

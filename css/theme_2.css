@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #14274D; /* Very dark blue */
+    --primary-hover-color: #0D1B33; /* Even darker blue */
+    --secondary-color: #28A745; /* Green accent */
+    --background-color: #E5E5E5; /* Very light gray */
+    --foreground-color: #FFFFFF; /* White for cards */
+    --text-color: #333333; /* Dark gray text */
+    --muted-text-color: #666666; /* Medium gray for muted text */
+    --link-color: #1F3A93; /* Navy blue for links */
+    --link-hover-color: #14274D; /* Dark navy hover */
+    --button-color: #1F3A93; /* Navy blue buttons */
+    --button-hover-color: #14274D; /* Darker navy hover */
+    --font-family: 'Arial', sans-serif; /* Sans-serif for a clean look */
+    --heading-font-size: 2.2rem;
+    --paragraph-font-size: 1rem;
+    --border-radius: 4px;
+}

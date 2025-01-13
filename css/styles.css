@@ -1,0 +1,538 @@
+@import url(https://db.onlinewebfonts.com/c/c373d9005cc5dfa6115be09d6d1a6dc9?family=Rockwell+Nova+W07+Extra+Bold);
+
+@font-face {
+    font-family: "Rockwell Nova W07 Extra Bold";
+    src: url("https://db.onlinewebfonts.com/t/c373d9005cc5dfa6115be09d6d1a6dc9.eot");
+    src: url("https://db.onlinewebfonts.com/t/c373d9005cc5dfa6115be09d6d1a6dc9.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/c373d9005cc5dfa6115be09d6d1a6dc9.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/c373d9005cc5dfa6115be09d6d1a6dc9.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/c373d9005cc5dfa6115be09d6d1a6dc9.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/c373d9005cc5dfa6115be09d6d1a6dc9.svg#Rockwell Nova W07 Extra Bold")format("svg");
+}
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--paragraph-font-size);
+    color: var(--text-color);
+    background: url('../images/hero_image.jpg') no-repeat center top;
+    background-size: auto;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    height: auto;
+    overflow: visible;
+}
+
+html {
+    height: auto;
+    /* Ensure the body has height */
+    overflow: visible;
+    /* Allow visible overflow */
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+/*img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}*/
+
+#company-logo {
+    width: clamp(150px, 25vw, 450px);
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.content-container {
+    padding-top: 100px;
+    max-width: 65%;
+    /* Set a maximum width for your content */
+    margin: 0 auto;
+    /* Center the container */
+    z-index: 1;
+    align-items: center;
+}
+
+.content-container * {
+    padding: 0 20 0 20;
+}
+
+.content-container h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-family: 'Rockwell Nova Bold';
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+
+.content-container h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Rockwell Nova Bold';
+    text-shadow: var(--text-shadow);
+}
+
+.content-container h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Rockwell Nova Bold';
+    text-shadow: var(--text-shadow);
+}
+
+.content-container a {
+    display: inline-block;
+    /* Make it behave like a button */
+    padding: 10px 20px;
+    /* Add inner spacing */
+    border-radius: var(--border-radius);
+    /* Rounded corners */
+    background-color: var(--button-color);
+    /* Use your defined button color */
+    color: var(--foreground-color);
+    /* Text color */
+    text-align: center;
+    /* Center text within the button */
+    text-decoration: none;
+    /* Remove underline */
+    box-shadow: var(--box-shadow);
+    /* Add shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Smooth transitions */
+}
+
+.content-container a:hover {
+    background-color: var(--button-hover-color);
+    /* Change on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /* Enhance shadow on hover */
+    color: #fff;
+    /* Ensure readability */
+}
+
+/* Hero Section Without Background */
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 125%;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    /* Full height of the viewport */
+    color: var(--foreground-color);
+    z-index: 1;
+    /* Keep it above the background */
+    padding: 50px;
+}
+
+#hero-tagline {
+    text-shadow: var(--text-shadow);
+    line-height: 120%;
+    font-family: 'Rockwell Nova Bold';
+    color: #333;
+    /* Optional: Define text color */
+}
+
+#hero-tagline sup {
+    font-size: 0.50em; /* Adjust size to make it proportionate */
+    margin-left: -0.65em; /* Remove unwanted gap (adjust as needed) */
+    margin-top: -2.5em;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    padding: 20px;
+    align-content: center;
+}
+
+.hero .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    padding: auto;
+    gap: 20px;
+}
+
+.hero .cta-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    background-color: var(--button-color);
+    color: var(--foreground-color);
+    transition: background-color 0.3s;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero .cta-buttons a:hover {
+    background-color: var(--button-hover-color);
+}
+
+#cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 4px;
+    padding-bottom: 20px;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    background-color: var(--foreground-color);
+    box-shadow: var(--box-shadow);
+    border-bottom: 1px solid var(--border-color);
+}
+
+section:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+h2 {
+    font-size: var(--heading-font-size);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+.reg {
+    margin-bottom: 20px;
+    text-shadow: var(--text-shadow);
+}
+
+.reg a {
+    display: block; /* Treat <a> as a block element */
+    margin: 0 auto; /* Centers the block element horizontally */
+    text-align: center; /* Centers text inside the <a> tag */
+    width: fit-content; /* Optional: Shrinks <a> to content size */
+}
+.reg ul {
+    list-style: none;
+    /* Remove default bullets */
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.reg ul li {
+    position: relative;
+    padding-left: 20px; /* Space for the bullet image */
+  }
+
+.reg h3 {
+    padding-left: 1%;
+}
+
+.reg p {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.reg img {
+    display: block; /* Treat <a> as a block element */
+    margin: 0 auto; /* Centers the block element horizontally */
+    text-align: center;
+    width: 75%;
+    height: auto;
+}
+
+.reg div {
+    margin: 20px;
+}
+
+#about-us {
+    box-shadow: var(--box-shadow);
+    padding: 60px 40px;
+}
+
+ul li::before {
+    content: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: url('../images/paw_print_blue.png') no-repeat;
+    background-size: 15px 15px;
+    /* Adjust size for a small bullet */
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 9;
+    /* Aligns the bullet with the first line */
+}
+
+#map {
+    margin: 20px auto; /* Center the map section horizontally */
+    padding: 10px; /* Add spacing inside the map div */
+    background-color: #f5f5f5; /* Light gray background for contrast */
+    border: 1px solid #ddd; /* Subtle border around the section */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    max-width: 800px; /* Constrain the width */
+    text-align: center; /* Center-align content inside the map div */
+}
+
+#map iframe {
+    width: 100%; /* Make the map iframe responsive */
+    height: 400px; /* Set a fixed height */
+    border: none; /* Remove default iframe border */
+}
+
+#directions-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #007bff; /* Use a standard link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#directions-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #0056b3; /* Darker shade for hover */
+}
+
+/* Service Cards */
+.service-card {
+    background-color: var(--foreground-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    margin-bottom: 20px;
+    color: var(--muted-text-color);
+}
+
+.service-card a {
+    color: var(--foreground-color);
+    letter-spacing: 4px;
+}
+
+/* Testimonials */
+.testimonial {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+
+.testimonial:nth-child(odd) {
+    border-left: 4px solid var(--primary-color);
+}
+
+.testimonial:nth-child(even) {
+    border-right: 4px solid var(--primary-color);
+    text-align: right;
+}
+
+.testimonial p {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.testimonial strong {
+    display: block;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--foreground-color);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--foreground-color);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+#about-us {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--foreground-color);
+}
+
+#about-team {
+    text-align: center;
+    /* Center-align the image in its container */
+}
+
+#team-image {
+    width: calc(100% - 40px);
+    /* Subtract 40px to account for 20px padding on each side */
+    max-width: 100%;
+    /* Prevent the image from overflowing */
+    padding: 0 20px;
+    /* Add padding inside the container */
+    box-sizing: border-box;
+    /* Ensure padding is included in width calculations */
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        max-width: 90%;
+        /* Slightly smaller for mobile */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #team-image {
+        width: calc(100% - 20px);
+        /* Adjust padding for smaller screens */
+    }
+}
+
+/* #### Generated By: http://www.cufonfonts.com #### */
+
+@font-face {
+    font-family: 'Rockwell Nova';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova'), url('RockwellNova.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Italic'), url('RockwellNova-Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Bold'), url('../fonts/RockwellNova-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Bold Italic'), url('RockwellNova-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Cond';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Cond'), url('RockwellNovaCond.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Cond Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Cond Italic'), url('RockwellNovaCond-Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Light'), url('RockwellNova-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Cond Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Cond Light'), url('RockwellNovaCond-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Light Italic'), url('RockwellNova-LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Cond Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Cond Light Italic'), url('RockwellNovaCond-LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Cond Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Cond Bold'), url('RockwellNovaCond-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Cond Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Cond Bold Italic'), url('RockwellNovaCond-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Extra Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Extra Bold'), url('RockwellNova-ExtraBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Rockwell Nova Extra Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Rockwell Nova Extra Bold Italic'), url('RockwellNova-ExtraBoldItalic.woff') format('woff');
+}
