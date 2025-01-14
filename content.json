@@ -51,22 +51,27 @@
       "description": "Behavior training is essential for a well-adjusted and happy pet. Our experienced trainers use positive reinforcement techniques to address a variety of behavioral issues.",
       "issuesAddressed": [
         {
+          "iconURL": "images/agression_icon.jpg",
           "title": "Aggression",
           "description": "We'll help you understand the root causes of aggression and develop strategies to prevent and manage it."
         },
         {
+          "iconURL": "images/anxiety_icon.jpg",
           "title": "Anxiety and Fear",
           "description": "We'll teach your pet coping mechanisms and relaxation techniques to reduce anxiety and fear."
         },
         {
+          "iconURL": "images/excessive_barking_icon.jpg",
           "title": "Excessive Barking",
           "description": "We'll identify the triggers for excessive barking and implement training strategies to reduce it."
         },
         {
+          "iconURL": "images/destructive_icon.jpg",
           "title": "Destructive Behavior",
           "description": "We'll help you understand why your pet is engaging in destructive behavior and provide solutions to prevent it."
         },
         {
+          "iconURL": "images/separation_icon.jpg",
           "title": "Separation Anxiety",
           "description": "We'll teach your pet how to cope with being alone and reduce separation-related anxiety."
         }

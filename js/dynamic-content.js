@@ -83,6 +83,8 @@ function populateContent(content) {
                         // Handle items with title and description (e.g., issuesAddressed)
                         return `
                             <div class="issue-card">
+                                <br>
+                                <img src="${item.iconURL}" alt="${item.title}">
                                 <h2>${item.title}</h2>
                                 <p>${item.description}</p>
                             </div>`;

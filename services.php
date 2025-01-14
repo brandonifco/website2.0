@@ -23,7 +23,7 @@ include 'header.php';
         <section class="reg" id="behavior-training">
             <br><h2 data-content="services.behaviorTraining.title"></h2><br>
             <p data-content="services.behaviorTraining.description"></p><br>
-            <h3>Behavioral Issues Addressed</h3>
+            <p><h3>Behavioral Issues Addressed</h3></p>
             <div id="behavior-issues">
                 <!-- Each issue will render as a card -->
                 <div data-content="services.behaviorTraining.issuesAddressed"></div>

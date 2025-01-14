@@ -38,8 +38,8 @@
 
 .desktop-menu li a {
     text-decoration: none;
-    color: #333;
-    font-size: 0.8em;
+    color: var(--link-color);
+    font-size: 0.7em;
     font-weight: bold;
     padding: 5px 10px;
     transition: color 0.3s;

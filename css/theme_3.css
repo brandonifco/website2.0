@@ -7,7 +7,8 @@
     --text-color: #37474F; /* Dark grayish-blue for text */
     --text-shadow: -2px 2px 5px rgba(255, 255, 255, 0.3);/* Shadow to the lower-left side*/
     --muted-text-color: #607D8B; /* Muted blue-gray */
-    --link-color: #66BB6A; /* Green for links */
+    --link-color: rgba(0, 0, 0, 1) /* Black for links */
+    --link-visited: rgba(0, 0, 0, 1) /* Black for links */
     --link-hover-color: #558B2F; /* Darker green hover */
     --button-color: #66BB6A; /* Soft green buttons */
     --button-hover-color: #558B2F; /* Dark green hover */

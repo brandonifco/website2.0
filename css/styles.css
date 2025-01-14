@@ -37,7 +37,7 @@ html {
 }
 
 a {
-    color: var(--link-color);
+   /* color: var(--link-color);*/
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -46,11 +46,45 @@ a:hover {
     color: var(--link-hover-color);
 }
 
-/*img {
-    max-width: 100%;
+a:visited {
+    color: var(--link-visited);
+}
+/* Style the issue-card container */
+.issue-card {
+    width: 95%; /* Take up 85% of the container width */
+    margin: 0 auto; /* Center horizontally and add vertical spacing */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align the text and image */
+    margin: 20px auto; /* Center the card horizontally */
+    box-sizing: border-box;
+}
+.issue-card * {
+        box-sizing: border-box;
+        margin: 0 auto;
+}
+.issue-card img {
+    width: 200px;
     height: auto;
-    display: block;
-}*/
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+/* Style the heading */
+.issue-card h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333; /* Set text color */
+}
+
+/* Style the paragraph */
+.issue-card p {
+    font-size: 1.2rem;
+    color: #666; /* Lighter text color */
+    margin-bottom: 10px;
+}
 
 #company-logo {
     width: clamp(150px, 25vw, 450px);
@@ -65,6 +99,9 @@ a:hover {
     margin: 0 auto;
     /* Center the container */
     z-index: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -224,7 +261,11 @@ h2 {
 
 
 .reg {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Horizontally center items */
     margin-bottom: 20px;
+    width:  100%;
     text-shadow: var(--text-shadow);
 }
 
@@ -254,13 +295,15 @@ h2 {
     display: block; /* Treat <a> as a block element */
     margin: 0 auto; /* Centers the block element horizontally */
     text-align: center;
-    width: 75%;
-    height: auto;
+/*    width: 75%;
+    height: auto;*/
 }
 
 .reg div {
     margin: 20px;
 }
+
+
 
 #about-us {
     box-shadow: var(--box-shadow);
