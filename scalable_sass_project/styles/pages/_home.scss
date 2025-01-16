@@ -1,0 +1,11 @@
+@use '../base/variables';
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('../images/hero_image.jpg') no-repeat center top;
+    background-size: cover;
+}

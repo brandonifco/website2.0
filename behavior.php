@@ -32,8 +32,8 @@ include 'header.php';
             <h3>Our Training Process</h3>
             <ul data-content="services.behaviorTraining.process"></ul><br>
             <h3>Choose the Training Package That's Right for You</h3>
-            <ul data-content="services.behaviorTraining.packages"></ul>
-            <p data-content="services.behaviorTraining.cta"></p><br>
+            <ul data-content="services.behaviorTraining.packages"></ul><br>
+            <a href="contact.php"><p data-content="services.behaviorTraining.cta"></p></a><br>
         </section><br>
 
     </div>

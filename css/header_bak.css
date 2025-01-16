@@ -96,68 +96,6 @@
     top: 10%; /* Adjust vertical position */
     right: 5%; /* Scales distance from the right with screen size */
 }
-/* General menu item styles */
-.menu-item {
-    font-size: 1.4rem; /* Ensure consistent font size */
-    font-weight: bold; /* Apply bold font weight to all menu items */
-    color: var(--link-color); /* Use the same color for all menu items */
-    margin: 0; /* Reset margins */
-    list-style: none; /* Remove bullets */
-    padding: 5px 10px; /* Consistent padding */
-    cursor: pointer; /* Indicate interactivity */
-}
-.menu-item sup, .menu-item.has-submenu sup {
-    font-size: 0.65em; /* Adjust size to make it proportionate */
-    margin-left: -0.1em; /* Remove unwanted gap (adjust as needed) */
-    margin-top: -2.5em;
-}
-/* Ensure submenu parent items inherit the same styles */
-.menu-item.has-submenu {
-    font-size: 1.4rem; /* Inherit font size */
-    padding: 5px 10px; /* Inherit padding */
-    position: relative; /* For submenu positioning */
-}
-
-/* Submenu-specific styles */
-.menu-item.has-submenu .submenu {
-    display: none; /* Hidden by default */
-    position: absolute; /* Position relative to parent */
-    background-color: var(--foreground-color); /* Match menu background */
-    padding: 10px; /* Add spacing inside submenu */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for visibility */
-    list-style: none; /* Remove bullets */
-    display: none; /* Hide by default */
-    position: absolute; /* Remove from normal flow */
-    top: 100%; /* Position below the parent */
-    margin: 0;
-    padding: 0;
-    z-index: 1001; /* Ensure it appears above other content when visible */
-}
-
-.menu-item.has-submenu:hover > .submenu,.menu-item.has-submenu.open .submenu {
-    display: block; /* Show submenu on hover */
-}
-
-/* Submenu item styles */
-.submenu li {
-    font-size: 1.4rem; /* Uniformly smaller than parent */
-    font-weight: normal; /* Reset weight */
-    padding: 5px 10px; /* Align padding */
-    margin: 0; /* Reset margins */
-    color: var(--text-color); /* Submenu text color */
-}
-
-.submenu li a {
-    text-decoration: none; /* Remove underline */
-    padding: 5px 10px; /* Consistent padding */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth effects */
-}
-
-.submenu li a:hover {
-    background-color: var(--background-color); /* Light background highlight */
-}
-
-
 
 /* Responsive Styling: Desktop View */
 @media (min-width: 1168px) {

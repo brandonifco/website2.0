@@ -1,0 +1,30 @@
+@use '../base/variables';
+
+// Responsive Styling
+@media (min-width: 1168px) {
+    .desktop-menu {
+        display: flex;
+    }
+
+    .menu-toggle, .mobile-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1167px) {
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 10%;
+        right: 5%;
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: variables.$text-color;
+        z-index: 1001;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+    }
+}

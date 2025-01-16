@@ -1,0 +1,34 @@
+@use '../base/variables';
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: variables.$spacing-lg;
+    background-color: variables.$background-color;
+    border-bottom: 1px solid variables.$foreground-color;
+    box-shadow: variables.$box-shadow;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.company-logo {
+    width: clamp(150px, 25vw, 450px);
+    height: auto;
+}
+.header-nav .desktop-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.header-nav .desktop-menu a {
+    text-decoration: none;
+    color: variables.$link-color;
+    transition: color 0.3s;
+}
+
+.header-nav .desktop-menu a:hover {
+    color: variables.$link-hover-color;
+}

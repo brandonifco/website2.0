@@ -17,10 +17,10 @@ footer a:hover {
 }
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(4, auto); /* Create 4 columns with width determined by content */
+    grid-template-columns: repeat(4, 1fr); /* Create 4 columns with width determined by content */
     justify-content: space-between; /* Distribute columns evenly across the footer */
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     place-items: center;
     gap: 20px; /* Add spacing between columns */
     width: 80%; /* Ensure the footer spans the entire width */
@@ -46,6 +46,7 @@ footer a:hover {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
+    text-align: justify;
 }
 .footer-awards li {
     list-style: none;

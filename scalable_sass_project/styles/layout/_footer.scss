@@ -1,0 +1,18 @@
+@use '../base/variables';
+
+// Footer styles
+footer {
+    background-color: variables.$secondary-color;
+    color: variables.$foreground-color;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: variables.$foreground-color;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -92,7 +92,13 @@
     "obedienceTraining": {
       "title": "Obedience Training: Build a Strong Bond with Your Pet",
       "description": "Obedience training is the foundation for a well-behaved pet. Our training programs focus on teaching essential commands and building a strong bond between you and your pet.",
-      "coreSkills": ["Sit", "Stay", "Come", "Heel", "Leave it"],
+      "coreSkills": [
+        "Sit",
+        "Stay",
+        "Come",
+        "Heel",
+        "Leave it"
+      ],
       "methods": [
         "Positive Reinforcement: We use rewards and praise to motivate your pet.",
         "Tailored Training: We customize our training approach to your pet's breed, age, and personality."
@@ -276,7 +282,11 @@
           "time": "Closed"
         }
       ],
-      "holidays": ["New Year's Day", "Thanksgiving", "Christmas Day"]
+      "holidays": [
+        "New Year's Day",
+        "Thanksgiving",
+        "Christmas Day"
+      ]
     },
     "map": {
       "embedURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d584.3566027916106!2d-85.50819918181729!3d44.763899728430125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881fd1e2e55025bb%3A0x405bcccf8047b00a!2sInvisible%20Fence%20Brand%20by%20Great%20Lakes%20Containment%20%26%20Training!5e1!3m2!1sen!2sus!4v1736458665916!5m2!1sen!2sus",
@@ -296,20 +306,7 @@
         },
         {
           "label": "Training Services",
-          "submenu": [
-            {
-              "label": "Behavior",
-              "url": "behavior.php"
-            },
-            {
-              "label": "Obedience",
-              "url": "obedience.php"
-            },
-            {
-              "label": "Containment",
-              "url": "containment.php"
-            }
-          ]
+          "url": "services.php"
         },
         {
           "label": "Why Invisible Fence® Brand",
@@ -335,20 +332,7 @@
         },
         {
           "label": "Training Services",
-          "submenu": [
-            {
-              "label": "Behavior",
-              "url": "behavior.php"
-            },
-            {
-              "label": "Obedience",
-              "url": "obedience.php"
-            },
-            {
-              "label": "Containment",
-              "url": "containment.php"
-            }
-          ]
+          "url": "services.php"
         },
         {
           "label": "Why Invisible Fence® Brand",

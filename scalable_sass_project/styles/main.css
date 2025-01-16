@@ -1,0 +1,193 @@
+/* Grayish-blue */
+/* Darker gray-blue */
+/* Softer green */
+/* Semi-transparent very light gray */
+/* Semi-transparent white */
+/* Dark grayish-blue for text */
+/* Highlight to the lower-left side */
+/* Muted blue-gray */
+/* Black for links */
+/* Darker green hover */
+/* Soft green buttons */
+/* Dark green hover */
+/* Shadow to the lower-left side */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(55, 71, 79);
+  background-color: rgba(247, 247, 247, 0.75);
+  line-height: 1.6;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: rgb(55, 71, 79);
+  line-height: 1.6;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(247, 247, 247, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.company-logo {
+  width: clamp(150px, 25vw, 450px);
+  height: auto;
+}
+
+.header-nav .desktop-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header-nav .desktop-menu a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s;
+}
+
+.header-nav .desktop-menu a:hover {
+  color: rgb(85, 139, 47);
+}
+
+footer {
+  background-color: rgb(102, 187, 106);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1168px) {
+  .desktop-menu {
+    display: flex;
+  }
+  .menu-toggle, .mobile-menu {
+    display: none;
+  }
+}
+@media (max-width: 1167px) {
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: rgb(55, 71, 79);
+    z-index: 1001;
+  }
+  .mobile-menu.open {
+    display: flex;
+  }
+}
+.button {
+  background-color: rgb(102, 187, 106);
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 6px;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  transition: rgba(247, 247, 247, 0.75) 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(85, 139, 47);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+.desktop-menu li a {
+  text-decoration: none;
+  color: rgb(55, 71, 79);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+.desktop-menu li a:hover {
+  color: rgb(69, 90, 100);
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.mobile-menu li a {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(247, 247, 247, 0.75);
+}
+
+#contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 6px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+#contact-form h2 {
+  font-family: "Rockwell Nova Bold";
+  color: rgb(55, 71, 79);
+}
+#contact-form input, #contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 6px;
+}
+#contact-form .btn-submit {
+  background-color: rgb(102, 187, 106);
+  color: rgba(247, 247, 247, 0.75);
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("../images/hero_image.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */

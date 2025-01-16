@@ -1,0 +1,45 @@
+@use '../base/variables';
+
+// Navigation styling
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+// Desktop Menu
+.desktop-menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: variables.$spacing-md;
+
+    li a {
+        text-decoration: none;
+        color: variables.$text-color;
+        font-weight: bold;
+        padding: variables.$spacing-sm variables.$spacing-md;
+        transition: color 0.3s;
+    }
+
+    li a:hover {
+        color: variables.$primary-color;
+    }
+}
+
+// Mobile Menu
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: variables.$foreground-color;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    box-shadow: variables.$box-shadow;
+
+    li a {
+        padding: variables.$spacing-md;
+        border-bottom: 1px solid variables.$background-color;
+    }
+}
+
