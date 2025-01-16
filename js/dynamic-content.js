@@ -58,7 +58,15 @@ function populateContent(content) {
             }
         }
 
-        if (value !== null) {
+        // Special case: Populate operating hours and holidays
+        if (element.id === 'hours-list' && Array.isArray(value)) {
+            element.innerHTML = value
+                .map(item => `<li>${item.day}: ${item.time}</li>`)
+                .join('');
+        } else if (element.id === 'holidays-list' && Array.isArray(value)) {
+            element.innerHTML = value.map(holiday => `<li>${holiday}</li>`).join('');
+        } else if (value !== null) {
+            // Default behavior for other elements
             if (element.tagName === 'IMG' && key.includes('ImageURL')) {
                 element.src = value;
             } else if (element.tagName === 'A' && key.includes('url')) {
@@ -143,6 +151,7 @@ function populateContent(content) {
         }
     }
 }
+
 
 // Initialize the dynamic content population
 document.addEventListener('DOMContentLoaded', async () => {

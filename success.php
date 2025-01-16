@@ -166,17 +166,16 @@ try {
         <h1>Appointment Confirmed</h1>
         <section class="reg">
         <p>Thank you for scheduling your appointment! Here are your details:</p>
-
+        <section class="confirmed">
         <ul>
-            <li><strong>Date:</strong> 
+            <li>Date:
             <?php echo htmlspecialchars(date('l, F j, Y', strtotime($start))); ?>
             </li>
-            <li><strong>Time:</strong> 
+            <li>Time:
             <?php echo htmlspecialchars(date('g:i A', strtotime($start))); ?></li>
         </ul>
-
-        <p>If you have any questions, feel free to call us at 
-            <?php echo htmlspecialchars($businessPhone); ?>.</p>
+        </section><p>If you have any questions, feel free to call us at</p>
+        <p data-content="contact.contactInformation.phoneNumber"></p>
         </section>
     </div>
 

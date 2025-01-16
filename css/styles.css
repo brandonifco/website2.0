@@ -246,6 +246,19 @@ a:visited {
     top: 9;    /* Aligns the bullet with the first line */
 }
 
+.confirmed ul li::before {
+    content: '';
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;    /* Aligns the bullet with the first line */
+}
+
 /* Hero Section Without Background */
 .hero {
     position: relative;

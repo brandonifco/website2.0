@@ -98,12 +98,12 @@
 }
 /* General menu item styles */
 .menu-item {
-    font-size: 1.4rem; /* Ensure consistent font size */
+    font-size: 1.3rem; /* Ensure consistent font size */
     font-weight: bold; /* Apply bold font weight to all menu items */
     color: var(--link-color); /* Use the same color for all menu items */
     margin: 0; /* Reset margins */
     list-style: none; /* Remove bullets */
-    padding: 5px 10px; /* Consistent padding */
+    padding: 2px; /* Consistent padding */
     cursor: pointer; /* Indicate interactivity */
 }
 .menu-item sup, .menu-item.has-submenu sup {
@@ -113,8 +113,8 @@
 }
 /* Ensure submenu parent items inherit the same styles */
 .menu-item.has-submenu {
-    font-size: 1.4rem; /* Inherit font size */
-    padding: 5px 10px; /* Inherit padding */
+    font-size: 1.3rem; /* Inherit font size */
+    padding: 3px; /* Inherit padding */
     position: relative; /* For submenu positioning */
 }
 
@@ -175,6 +175,7 @@
     .menu-toggle {
         display: block; /* Show toggle button */
         right: 4vw; /* Adjust the right spacing using viewport width */
+        top: 60px;
     }
 
     .mobile-menu {
