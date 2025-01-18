@@ -23,40 +23,39 @@ include 'header.php';
 <br>
 
         <!-- Key Features and Benefits -->
-        <section id="key-features" class="reg"><br>
-            <h2>Key Features and Benefits</h2>
+        <section id="key-features" class="reg">
+            <h3>Key Features and Benefits</h3>
             <ul>
                 <li data-content="whyInvisibleFence.keyFeaturesAndBenefits.customizableContainmentZones"></li>
                 <li data-content="whyInvisibleFence.keyFeaturesAndBenefits.durableCollars"></li>
             </ul><br>
-            <h3>Professional Installation and Training:</h3><br>
+            <h2>Professional Installation and Training:</h2><br>
             <ul>
                 <li data-content="whyInvisibleFence.keyFeaturesAndBenefits.professionalInstallationAndTraining.installation"></li>
                 <li data-content="whyInvisibleFence.keyFeaturesAndBenefits.professionalInstallationAndTraining.postInstallationTraining"></li>
                 <li data-content="whyInvisibleFence.keyFeaturesAndBenefits.customerSupport"></li>
             </ul><br>
-            <h3>Safety Features:</h3><br>
+            <h2>Safety Features:</h2><br>
             <ul>
                 <li data-content="whyInvisibleFence.keyFeaturesAndBenefits.safetyFeatures.failSafeMechanisms"></li>
                 <li data-content="whyInvisibleFence.keyFeaturesAndBenefits.safetyFeatures.adjustableCorrectionLevels"></li>
             </ul>
-            <br>
-        </section>
+        </section><br>
 
         <!-- Comparison with Alternatives -->
         <section id="comparison" class="reg">
-            <h2>Comparison with Alternatives</h2>
+            <h3>Comparison with Alternatives</h3>
             <ul>
                 <li data-content="whyInvisibleFence.comparisonWithAlternatives.lowerMaintenanceCosts"></li>
                 <li data-content="whyInvisibleFence.comparisonWithAlternatives.lessIntrusiveDesign"></li>
                 <li data-content="whyInvisibleFence.comparisonWithAlternatives.enhancedSafety"></li>
             </ul>
             <br>
-        </section>
+        </section><br>
 
         <!-- Customer Success Stories -->
         <section id="customer-success-stories" class="reg">
-            <h2>Customer Success Stories</h2>
+            <h3>Customer Success Stories</h3>
             <div data-content="whyInvisibleFence.customerSuccessStories">
                 <!-- Success stories will be dynamically loaded here -->
             </div><br>

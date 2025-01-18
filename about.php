@@ -44,8 +44,8 @@ include 'header.php';
             </div>
 <br>
             <!-- Team Image Section -->
-            <div id="team-photo" class="reg">
-                <img src="" alt="Our Team" data-content="aboutUs.teamImageURL">
+            <div id="team-image" class="reg">
+                <img id="team-image" src="" alt="Our Team" data-content="aboutUs.teamImageURL">
             </div>
         </section><br>
     </div>

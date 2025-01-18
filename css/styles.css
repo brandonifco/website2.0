@@ -283,7 +283,7 @@ a:visited {
 
 #hero-tagline sup {
     font-size: 0.50em; /* Adjust size to make it proportionate */
-    margin-left: -0.65em; /* Remove unwanted gap (adjust as needed) */
+    margin-left: -0.15em; /* Remove unwanted gap (adjust as needed) */
     margin-top: -2.5em;
 }
 
@@ -339,7 +339,7 @@ section {
 }
 
 section:nth-child(even) {
-    background-color: var(--background-color);
+    background-color: var(--foreground-color);
 }
 
 h2 {
@@ -369,11 +369,15 @@ h2 {
 .reg ul {
     list-style: none;    /* Remove default bullets */
     padding: clamp(10px, 2vw, 20px);
+    max-width: 65%;
 }
 
 .reg ul li {
     position: relative;
+    display: flex;
+    align-items: center;
     padding-left: 20px; /* Space for the bullet image */
+    width: 100%;
   }
 
 .reg p {
@@ -383,7 +387,6 @@ h2 {
 .reg img {
     display: block; /* Treat <a> as a block element */
     margin: 0 auto; /* Centers the block element horizontally */
-    width: 85vw;
     text-align: center;
 }
 

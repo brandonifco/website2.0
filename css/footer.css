@@ -17,7 +17,7 @@ footer a:hover {
 }
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Create 4 columns with width determined by content */
+    grid-template-columns: repeat(3, 1fr); /* Create 4 columns with width determined by content */
     justify-content: space-between; /* Distribute columns evenly across the footer */
     margin: 0 auto;
     text-align: left;
@@ -36,11 +36,14 @@ footer a:hover {
     gap: 20px;
 }
 .footer-social-media-links img {
-    display: block;
+    display: inline-block;
     width: 50px;
     height: auto;
     padding: 5px;
     margin: 0 auto;
+}
+.footer-sitemap {
+    max-width: fit-content;
 }
 .footer-sitemap a {
     display: inline-block;
