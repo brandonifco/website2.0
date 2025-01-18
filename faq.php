@@ -19,7 +19,6 @@ include 'header.php';
     <div id="main-content" class="content-container">
     <h1 id="hero-tagline" data-content="faq.title"></h1><br>
         <section class=faq>
-
             <!-- FAQ Categories -->
             <div id="faq-categories">
                 <!-- Each category with questions will be rendered dynamically -->

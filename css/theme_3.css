@@ -13,8 +13,8 @@
     --button-color: rgba(102, 187, 106, 1); /* Soft green buttons */
     --button-hover-color: rgba(85, 139, 47, 1); /* Dark green hover */
     --font-family: 'Roboto', sans-serif; /* Modern sans-serif */
-    --heading-font-size: 4rem;
-    --paragraph-font-size: 1.5rem;
+    --heading-font-size: clamp(1.2rem, 2vw, 4rem);
+    --paragraph-font-size: clamp(1rem, 1.5vw, 2rem);
     --border-radius: 6px;
     --box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow to the lower-left side */
     --heading-text-color: rgba(25, 38, 70, 1) ;

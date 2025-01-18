@@ -19,22 +19,13 @@ include 'header.php';
     <div id="main-content" class="content-container">
         <h1 id="hero-tagline" data-content="contact.contactInformation.title">Contact Us</h1>
         <section id="container-content">
-            <br>
-            <section class="reg"><br>
+            <section class="reg">
                 <!-- Contact Information Section -->
                 <div id="contact-info">
                     <p id="contact-phone" data-content="contact.contactInformation.phoneNumber"></p>
                     <p id="contact-email" data-content="contact.contactInformation.emailAddress"></p>
                     <p id="contact-address" data-content="contact.contactInformation.physicalAddress"></p>
                     <p id="contact-description" data-content="contact.contactInformation.description"></p>
-                </div><br>
-
-                <!-- Contact Form Section -->
-                <div id="contact-form">
-                    <form id="dynamic-contact-form">
-                        <!-- Form fields will be dynamically rendered -->
-                    </form>
-                    <p id="form-confirmation" style="display: none;" data-content="contact.contactForm.submissionConfirmation"></p>
                 </div>
 
                 <!-- Operating Hours Section -->
@@ -75,8 +66,8 @@ include 'header.php';
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn-submit">Submit</button>
-                    </form><br>
-                </div><br>
+                    </form>
+                </div>
             </section>
         </section><br>
     </div>

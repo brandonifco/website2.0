@@ -16,20 +16,19 @@ include 'header.php';
 
     <!-- Main Content Area -->
     <div id="main-content" class="content-container">
-    <br><h1 id="hero-tagline" data-content="services.obedienceTraining.title"></h1><br>
-    <section id="container-content"><br>
+    <br><h1 id="hero-tagline" data-content="services.obedienceTraining.title"></h1>
+    <section id="container-content">
         <!-- Obedience Training Section -->
         <section class="reg" id="obedience-training">
-            <br>
-            <p data-content="services.obedienceTraining.description"></p><br>
+            <p data-content="services.obedienceTraining.description"></p>
             <h3>Core Skills</h3>
             <ul data-content="services.obedienceTraining.coreSkills"></ul><br>
             <h3>Our Training Methods</h3>
             <ul data-content="services.obedienceTraining.methods"></ul><br>
             <h3>Choose the Training Package That's Right for You</h3>
             <ul data-content="services.obedienceTraining.packages"></ul>
-            <a href="contact.php"><p data-content="services.obedienceTraining.cta"></p></a><br>
-        </section><br>
+            <a href="contact.php"><p data-content="services.obedienceTraining.cta"></p></a>
+        </section>
     </section><br>
     </div>
 

@@ -12,39 +12,38 @@ include 'header.php';
     <!-- Main Content Area -->
     <div id="main-content">
         <div class="content-container">
-            <h1 id="hero-tagline" data-content="homepage.heroTagline"></h1><br>
+            <h1 id="hero-tagline" data-content="homepage.heroTagline"></h1>
             <!-- Call to Action Section -->
 
             <div id="cta-section">
                 <a href="" id="primary-cta" class="cta-button" data-content="homepage.cta.primary.url">
                     <span data-content="homepage.cta.primary.label"></span>
                 </a>
-                <br><br>
+                <br>
                 <a href="" id="secondary-cta" class="cta-button secondary" data-content="homepage.cta.secondary.url">
                     <span data-content="homepage.cta.secondary.label"></span>
                 </a>
             </div>
 
-            <section class="reg"><br>
+            <section class="reg">
                 <!-- Service Overview Section -->
 
                 <div id="service-overview" data-content="homepage.serviceOverview">
                     <!-- Service cards will be dynamically loaded here -->
-                </div><br>
-
-            </section><br>
-
-            <section class="reg"><br>
-                <!-- Client Testimonials Section -->
-
-                <div id="client-testimonials" data-content="homepage.clientTestimonials">
-                    <!-- Testimonials will be dynamically loaded here -->
-                </div><br>
+                </div>
 
             </section><br>
 
             <section class="reg">
-                <br>
+                <!-- Client Testimonials Section -->
+
+                <div id="client-testimonials" data-content="homepage.clientTestimonials">
+                    <!-- Testimonials will be dynamically loaded here -->
+                </div>
+
+            </section><br>
+
+            <section class="reg">
                 <!-- About Us Section -->
 
                 <div id="about-us" class="about">
@@ -59,7 +58,7 @@ include 'header.php';
                         <img id="team-image" src="" alt="Our Team" data-content="aboutUs.teamImageURL">
                     </div><br>
 
-                </div><br>
+                </div>
 
             </section><br>
         </div>

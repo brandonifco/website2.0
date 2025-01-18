@@ -39,7 +39,7 @@
 .desktop-menu li a {
     text-decoration: none;
     color: var(--link-color);
-    font-size: 0.7em;
+    font-size: clamp(0.5rem, 1.2vw, 0.85em);
     font-weight: bold;
     padding: 5px 10px;
     transition: color 0.3s;
@@ -98,7 +98,7 @@
 }
 /* General menu item styles */
 .menu-item {
-    font-size: 1.3rem; /* Ensure consistent font size */
+    font-size: clamp(0.8rem, 1.5vw, 1em);
     font-weight: bold; /* Apply bold font weight to all menu items */
     color: var(--link-color); /* Use the same color for all menu items */
     margin: 0; /* Reset margins */
@@ -113,7 +113,7 @@
 }
 /* Ensure submenu parent items inherit the same styles */
 .menu-item.has-submenu {
-    font-size: 1.3rem; /* Inherit font size */
+    font-size: clamp(0.8rem, 1.5vw, 1em);
     padding: 3px; /* Inherit padding */
     position: relative; /* For submenu positioning */
 }
@@ -140,7 +140,7 @@
 
 /* Submenu item styles */
 .submenu li {
-    font-size: 1.4rem; /* Uniformly smaller than parent */
+    font-size: clamp(0.8rem, 1.5vw, 1em);
     font-weight: normal; /* Reset weight */
     padding: 5px 10px; /* Align padding */
     margin: 0; /* Reset margins */
@@ -160,7 +160,7 @@
 
 
 /* Responsive Styling: Desktop View */
-@media (min-width: 1168px) {
+@media (min-width: 1038px) {
     .desktop-menu {
         display: flex; /* Show desktop menu on larger screens */
     }
@@ -171,7 +171,7 @@
 }
 
 /* Responsive Styling: Mobile View */
-@media (max-width: 1167px) {
+@media (max-width: 1037px) {
     .menu-toggle {
         display: block; /* Show toggle button */
         right: 4vw; /* Adjust the right spacing using viewport width */

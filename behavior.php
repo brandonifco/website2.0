@@ -21,9 +21,8 @@ include 'header.php';
 
         <!-- Behavior Training Section -->
         <section class="reg" id="behavior-training">
-            <br>
-            <p data-content="services.behaviorTraining.description"></p><br>
-            <p><h3>Behavioral Issues Addressed</h3></p>
+            <p data-content="services.behaviorTraining.description"></p>
+            <h3>Behavioral Issues Addressed</h3>
             <div id="behavior-issues">
                 <!-- Each issue will render as a card -->
                 <div data-content="services.behaviorTraining.issuesAddressed"></div>

@@ -17,12 +17,11 @@ include 'header.php';
     <!-- Main Content Area -->
     <div id="main-content" class="content-container">
     <br><h1 id="hero-tagline" data-content="services.containmentSystems.title"></h1><br>
-    <section id="container-content"><br>
+    <section id="container-content">
 
 
         <!-- Containment Systems Section -->
         <section class="reg" id="containment-systems">
-            <br>
             <p data-content="services.containmentSystems.description"></p><br>
             <h3>How it Works</h3>
             <ul data-content="services.containmentSystems.howItWorks"></ul><br>
@@ -31,8 +30,7 @@ include 'header.php';
             <h3>Our Services</h3>
             <ul data-content="services.containmentSystems.services"></ul><br>
             <a href="schedule.php"><p data-content="services.containmentSystems.cta"></p></a>
-        <br></section>
-        <br>
+        </section>
     </section><br>
     </div>
 
