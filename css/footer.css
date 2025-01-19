@@ -4,6 +4,7 @@ footer {
     color: var(--foreground-color);
     padding: 20px;
     text-align: center;
+    font-size: clamp(.8em, 1.3vw, 1.5em);
 }
 
 footer a {
@@ -23,7 +24,7 @@ footer a:hover {
     text-align: left;
     place-items: center;
     gap: 20px; /* Add spacing between columns */
-    width: 80%; /* Ensure the footer spans the entire width */
+    width: 95%; /* Ensure the footer spans the entire width */
 }
 
 .footer-container > div,
@@ -51,6 +52,12 @@ footer a:hover {
     margin: 0 auto;
     text-align: justify;
 }
+.footer-awards a {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+}
 .footer-awards li {
     list-style: none;
 }
@@ -58,6 +65,7 @@ footer a:hover {
 @media (max-width: 1168px) {
     .footer-container {
         grid-template-columns: 1fr; /* Single column for smaller screens */
+        max-width: 65%;
     }
 }
 

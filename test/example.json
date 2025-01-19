@@ -1,0 +1,118 @@
+{
+  "environment": "development",
+  "content": {
+    "homepage": {
+      "heroTagline": "Welcome to the Future of Pet Care",
+      "heroTaglineMetadata": { "type": "text", "transform": "uppercase" },
+      "heroImageURL": "images/hero_image.jpg",
+      "cta": {
+        "primary": {
+          "label": "Get Started",
+          "url": "start.html"
+        },
+        "secondary": {
+          "label": "Learn More",
+          "url": "learn.html"
+        }
+      }
+    },
+    "services": [
+      {
+        "type": "card",
+        "title": "Behavior Training",
+        "description": "Help your pet become the best version of themselves.",
+        "url": "behavior.html",
+        "imageURL": "images/behavior.jpg"
+      },
+      {
+        "type": "card",
+        "title": "Obedience Training",
+        "description": "Teach your dog essential commands.",
+        "url": "obedience.html",
+        "imageURL": "images/obedience.jpg"
+      }
+    ],
+    "testimonials": [
+      {
+        "type": "testimonial",
+        "text": "This is the best service I've ever used!",
+        "author": "John Doe"
+      },
+      {
+        "type": "testimonial",
+        "text": "My pet has never been happier!",
+        "author": "Jane Smith",
+        "class": "highlight",
+        "style": "color: green; font-weight: bold;"
+      }
+    ],
+    "faq": [
+      {
+        "category": "General Questions",
+        "questions": [
+          {
+            "question": "What services do you offer?",
+            "answer": "We offer behavior training, obedience training, and pet containment solutions."
+          },
+          {
+            "question": "Is the training safe for my pet?",
+            "answer": "Absolutely! We use positive reinforcement techniques to ensure a safe and effective experience."
+          }
+        ]
+      },
+      {
+        "category": "Training Specifics",
+        "questions": [
+          {
+            "question": "How long does training take?",
+            "answer": "Most pets complete training in 4–6 weeks with consistent practice."
+          }
+        ]
+      }
+    ],
+    "pricing": {
+      "basicPlan": {
+        "title": "Basic Plan",
+        "price": 299.99,
+        "priceMetadata": { "type": "currency", "symbol": "$", "precision": 2 },
+        "description": "A starter plan for basic training needs."
+      },
+      "premiumPlan": {
+        "title": "Premium Plan",
+        "price": 499.99,
+        "priceMetadata": { "type": "currency", "symbol": "$", "precision": 2 },
+        "description": "Includes advanced training and exclusive resources."
+      }
+    },
+    "operatingHours": {
+      "hours": [
+        { "day": "Monday", "time": "9 AM - 5 PM" },
+        { "day": "Tuesday", "time": "9 AM - 5 PM" },
+        { "day": "Wednesday", "time": "9 AM - 5 PM" }
+      ],
+      "holidays": ["New Year's Day", "Thanksgiving", "Christmas Day"]
+    },
+    "socialLinks": [
+      {
+        "platform": "Facebook",
+        "url": "https://facebook.com/petcare",
+        "iconURL": "images/facebook-icon.png"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://instagram.com/petcare",
+        "iconURL": "images/instagram-icon.png"
+      }
+    ],
+    "aboutUs": {
+      "intro": "We provide the best care for your pets, ensuring they are safe, healthy, and happy.",
+      "mission": "To empower pet owners with innovative solutions for pet care.",
+      "team": {
+        "type": "card",
+        "title": "Meet Our Team",
+        "description": "Our dedicated team of professionals ensures your pets receive the best care.",
+        "imageURL": "images/team.jpg"
+      }
+    }
+  }
+}

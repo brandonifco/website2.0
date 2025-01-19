@@ -396,11 +396,20 @@
         "url": "contact.php"
       }
     ],
-    "copywriteInfo": "© 2025 Web-Services-LLC. All rights reserved.",
+    "copywriteInfo": "© 2025 BVG-Web-Services-LLC. All rights reserved.",
     "awardsCertifications": [
-      "Best Pet Training Service 2024",
-      "Certified by the National Pet Trainers Association",
-      "Invisible Fence Premier Partner"
+      {
+        "label": "Best Pet Training Service 2024",
+        "url": "localhost:8000"
+      },
+      {
+        "label": "Certified by the APDT",
+        "url": "https://apdt.com"
+      },
+      {
+        "label": "Invisible Fence Premier Partner",
+        "url": "https://www.invisiblefence.com"
+      }
     ],
     "trustIndicators": [
       {
@@ -415,7 +424,7 @@
     "socialMediaLinks": [
       {
         "platform": "Facebook",
-        "url": "https://facebook.com/yourcompany",
+        "url": "https://www.facebook.com/IFofUP/",
         "iconURL": "images/fb.png"
       },
       {
@@ -425,7 +434,7 @@
       },
       {
         "platform": "Instagram",
-        "url": "https://instagram.com/yourcompany",
+        "url": "https://instagram.com/invisiblefencebrandupnm/",
         "iconURL": "images/ig.png"
       }
     ]
