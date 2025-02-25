@@ -1,0 +1,194 @@
+/* General Header Styling */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px; /* Vertical padding scales with viewport */
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 30px;
+/*    height: 10vh; /* Header height is 10% of the viewport height */
+    width: 100%;
+    min-height: 60px; /* Ensure a minimum height for smaller screens */
+    max-height: 100px; /* Optionally, cap the maximum height */
+    z-index: 1000;
+    background-color: var(--background-color); /* Optional: Add a background to avoid transparency issues */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visibility */
+}
+.company-logo {
+    vertical-align: middle; /* Ensure proper inline alignment if needed */
+}
+
+
+/* Navigation Styling */
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Desktop Menu Styling */
+.desktop-menu {
+    display: none; /* Initially hidden */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.desktop-menu li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: clamp(0.5rem, 1.2vw, 0.85em);
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.desktop ul li::before {
+    content: '';
+    list-style: none;
+}
+
+.desktop-menu li a:hover {
+    color: #007BFF; /* Highlight on hover */
+}
+
+/* Mobile Menu Styling */
+.mobile-menu {
+    display: none; /* Hidden by default */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.mobile-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.mobile-menu li a:hover {
+    background-color: #f8f8f8;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none; /* Hidden on desktop */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    z-index: 1001; /* Above the mobile menu */
+    position: fixed; /* Fix to the viewport */
+    top: 10%; /* Adjust vertical position */
+    right: 5%; /* Scales distance from the right with screen size */
+}
+/* General menu item styles */
+.menu-item {
+    font-size: clamp(0.8rem, 1.5vw, 1em);
+    font-weight: bold; /* Apply bold font weight to all menu items */
+    color: var(--link-color); /* Use the same color for all menu items */
+    margin: 0; /* Reset margins */
+    list-style: none; /* Remove bullets */
+    padding: 2px; /* Consistent padding */
+    cursor: pointer; /* Indicate interactivity */
+}
+.menu-item sup, .menu-item.has-submenu sup {
+    font-size: 0.65em; /* Adjust size to make it proportionate */
+    margin-left: -0.1em; /* Remove unwanted gap (adjust as needed) */
+    margin-top: -2.5em;
+}
+/* Ensure submenu parent items inherit the same styles */
+.menu-item.has-submenu {
+    font-size: clamp(0.8rem, 1.5vw, 1em);
+    padding: 3px; /* Inherit padding */
+    position: relative; /* For submenu positioning */
+}
+
+/* Submenu-specific styles */
+.menu-item.has-submenu .submenu {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position relative to parent */
+    background-color: var(--foreground-color); /* Match menu background */
+    padding: 10px; /* Add spacing inside submenu */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for visibility */
+    list-style: none; /* Remove bullets */
+    display: none; /* Hide by default */
+    position: absolute; /* Remove from normal flow */
+    top: 100%; /* Position below the parent */
+    margin: 0;
+    padding: 0;
+    z-index: 1001; /* Ensure it appears above other content when visible */
+}
+
+.menu-item.has-submenu:hover > .submenu,.menu-item.has-submenu.open .submenu {
+    display: block; /* Show submenu on hover */
+}
+
+/* Submenu item styles */
+.submenu li {
+    font-size: clamp(0.8rem, 1.5vw, 1em);
+    font-weight: normal; /* Reset weight */
+    padding: 5px 10px; /* Align padding */
+    margin: 0; /* Reset margins */
+    color: var(--text-color); /* Submenu text color */
+}
+
+.submenu li a {
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Consistent padding */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth effects */
+}
+
+.submenu li a:hover {
+    background-color: var(--background-color); /* Light background highlight */
+}
+
+
+
+/* Responsive Styling: Desktop View */
+@media (min-width: 1038px) {
+    .desktop-menu {
+        display: flex; /* Show desktop menu on larger screens */
+    }
+
+    .menu-toggle, .mobile-menu {
+        display: none; /* Hide mobile menu and toggle button */
+    }
+}
+
+/* Responsive Styling: Mobile View */
+@media (max-width: 1037px) {
+    .menu-toggle {
+        display: block; /* Show toggle button */
+        right: 4vw; /* Adjust the right spacing using viewport width */
+        top: 60px;
+    }
+
+    .mobile-menu {
+        display: none; /* Hidden by default */
+    }
+
+    .mobile-menu.open {
+        display: flex; /* Display the mobile menu when open */
+    }
+}
+
+/* Parent Fixes for Sticky Context */
+html, body {
+    height: auto; /* Ensure the body and html have full height */
+    overflow: visible; /* Prevent clipping of content */
+}

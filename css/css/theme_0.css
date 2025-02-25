@@ -1,0 +1,21 @@
+/* Variables for Customization */
+:root {
+    --primary-color: #007BFF;
+    --primary-hover-color: #0056b3;
+    --secondary-color: #333;
+    --background-color: #f9f9f9;
+    --foreground-color: #fff;
+    --text-color: #333;
+    --muted-text-color: #555;
+    --link-color: #007BFF;
+    --link-hover-color: #0056b3;
+    --button-color: #007BFF;
+    --button-hover-color: #0056b3;
+    --border-color: #eee;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --font-family: 'Arial', sans-serif;
+    --heading-font-size: 2rem;
+    --paragraph-font-size: 1rem;
+    --button-font-size: 1rem;
+    --border-radius: 5px;
+}
