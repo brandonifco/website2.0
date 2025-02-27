@@ -114,15 +114,16 @@ function populateContent(content) {
                             // Handle FAQ categories and their questions
                             return `
                                 <div class="faq-category">
-                                    <h3>${item.category}</h3>
+                                    
                                     <ul>
                                         ${item.questions
                                     .map(
                                         (question) => `
-                                                    <li>
+                                                    
                                                         <h2>${question.question}</h2>
                                                         <p>${question.answer}</p>
-                                                    </li>`
+                                                        <br>
+                                                    `
                                     )
                                     .join('')}
                                     </ul>

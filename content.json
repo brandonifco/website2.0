@@ -14,16 +14,6 @@
     },
     "serviceOverview": [
       {
-        "title": "BEHAVIOR",
-        "description": "Improve your pet’s behavior with our customized training programs. We address common issues such as aggression, anxiety, and excessive barking.",
-        "url": "behavior.php"
-      },
-      {
-        "title": "OBEDIENCE",
-        "description": "Teach your pet essential obedience skills like sit, stay, and come with our expert trainers.",
-        "url": "obedience.php"
-      },
-      {
         "title": "CONTAINMENT",
         "description": "Explore our Invisible Fence® Brand solutions to keep your pets safe and secure in your yard or home.",
         "url": "containment.php"
@@ -186,40 +176,6 @@
         ]
       },
       {
-        "category": "Behavior Training",
-        "questions": [
-          {
-            "question": "Can all behavioral issues be fixed?",
-            "answer": "While we can address a wide range of behavioral issues, the success of training depends on various factors, including the severity of the problem, the pet's age, and the owner's commitment to the training process."
-          },
-          {
-            "question": "How do I know if my pet needs behavioral training?",
-            "answer": "If your pet is exhibiting aggression, excessive barking or howling, destructive behavior, anxiety or fear, or poor leash manners, they may benefit from behavioral training."
-          },
-          {
-            "question": "What methods do you use in behavior training?",
-            "answer": "We employ positive reinforcement training techniques, focusing on rewarding good behavior and gently correcting unwanted behaviors."
-          }
-        ]
-      },
-      {
-        "category": "Obedience Training",
-        "questions": [
-          {
-            "question": "At what age can a pet start obedience training?",
-            "answer": "Puppies can start basic obedience training as early as 8 weeks old. Adult dogs can also benefit from training at any age."
-          },
-          {
-            "question": "What happens if my pet doesn’t respond to the training?",
-            "answer": "We will adjust our training methods to find what works best for your pet. We may also recommend additional training sessions or consult with a veterinary behaviorist."
-          },
-          {
-            "question": "Do you offer group or individual sessions?",
-            "answer": "We offer both group and individual training sessions, depending on your pet's specific needs and your preferences."
-          }
-        ]
-      },
-      {
         "category": "Containment Systems",
         "questions": [
           {
@@ -295,21 +251,8 @@
           "url": "index.php"
         },
         {
-          "label": "Training Services",
-          "submenu": [
-            {
-              "label": "Behavior",
-              "url": "behavior.php"
-            },
-            {
-              "label": "Obedience",
-              "url": "obedience.php"
-            },
-            {
-              "label": "Containment",
-              "url": "containment.php"
-            }
-          ]
+          "label": "Containment Training",
+          "url": "containment.php"
         },
         {
           "label": "Why Invisible Fence® Brand",
@@ -334,21 +277,8 @@
           "url": "index.php"
         },
         {
-          "label": "Training Services",
-          "submenu": [
-            {
-              "label": "Behavior",
-              "url": "behavior.php"
-            },
-            {
-              "label": "Obedience",
-              "url": "obedience.php"
-            },
-            {
-              "label": "Containment",
-              "url": "containment.php"
-            }
-          ]
+          "label": "Containment Training",
+          "url": "containment.php"
         },
         {
           "label": "Why Invisible Fence® Brand",
@@ -376,8 +306,8 @@
         "url": "index.php"
       },
       {
-        "label": "Training Services",
-        "url": "services.php"
+        "label": "Containment Training",
+        "url": "containment.php"
       },
       {
         "label": "Why Invisible Fence® Brand",
