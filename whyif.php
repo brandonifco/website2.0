@@ -43,8 +43,11 @@ include 'header.php';
                     <li><strong>Outdoor Solutions:</strong> Create a secure perimeter around your yard, no matter the size or shape.</li>
                 </ul>
                 <strong>Durability: ➡️ Built to last:</strong> Designed to withstand tough weather and your pet’s active lifestyle, giving you years of reliable performance.<br><br>
-                <strong>Professional Installation: ➡️ Hassle-free setup:</strong> Our expert technicians ensure your system is installed correctly for optimal safety. We take care of all the details, so you can relax knowing your pet is safe and your system is set up for optimal effectiveness.<br><br>
+                <strong>Professional Installation: ➡️ Hassle-free setup:</strong> Our expert technicians ensure your 100% customizable system is installed correctly to ensure the higest level of safety, reliability, and maintenance-free operation. We take care of all the details, so you can relax knowing your pet is safe and your system is set up for optimal effectiveness and stress-free training. We determine the best way to install the boundary to your desired shape in the yard.<br><br>
                 <strong>More Than Just a Fence: ➡️ Expert Training for Lasting Safety:</strong> Our certified trainers use a positive, relationship-based approach that focuses on building your pet's understanding and confidence within the boundaries of your Invisible Fence® Brand system. We gently guide them to recognize their safe zone, manage separation anxiety, and ensure a harmonious transition to their new freedom.<br><br>
+            <a href="/containment.php" class="cta-button">
+                LEARN MORE ABOUT TRAINING
+            </a><br>
                 <strong>Safety First: ➡️ Advanced safety features for your peace of mind: </strong>
                 <ul>
                     <li>Fail-safe mechanisms to protect your pet in case of a system malfunction.</li>

@@ -26,12 +26,22 @@ include 'header.php';
         <!-- Containment Systems Section -->
         <section class="reg" id="containment-systems">
             <p data-content="services.containmentSystems.description"></p><br>
-            <h3>How it Works</h3>
+            <h3>Key Training Principles</h3>
             <ul data-content="services.containmentSystems.howItWorks"></ul><br>
-            <h3>Benefits of Invisible Fence® Brand</h3>
+            <h3>Common Misconceptions About Electronic Fences</h3>
             <ul data-content="services.containmentSystems.benefits"></ul><br>
-            <h3>Our Services</h3>
+            <h3>Dog vs. Cat Training: Key Differences</h3>
             <ul data-content="services.containmentSystems.services"></ul><br>
+            <h3>The Bottom Line</h3>
+            <p>At <strong>Great Lakes Containment & Training</strong>, we provide the <strong>most effective, humane, and stress-free pet containment training available</strong>. Our proven methods ensure your pet understands boundaries, responds correctly, and remains happy and secure—without fear or confusion.</p>
+            <p>With <strong>expert guidance, customized training plans, and a deep understanding of pet behavior</strong>, we guarantee better results than DIY training or one-size-fits-all approaches.</p>
+<ul>
+    <li><strong>Faster results</strong></li>
+    <li><strong>Lower stress for you and your pet</strong></li>
+    <li><strong>Long-term success & safety</strong></li>
+</ul>
+
+<p><strong>Don’t leave your pet’s safety to chance. Trust the professionals who get it right the first time!</strong></p>
             <a href="schedule.php"><p data-content="services.containmentSystems.cta"></p></a>
         </section>
     </section><br>
