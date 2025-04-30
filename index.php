@@ -56,11 +56,6 @@ include 'header.php';
                     <p id="about-mission" data-content="aboutUs.missionStatement"></p><br>
                     <p id="about-values" data-content="aboutUs.coreValues"></p><br>
                     <br>
-
-                    <div id="about-team">
-                        <img id="team-image" src="" alt="Our Team" data-content="aboutUs.teamImageURL">
-                    </div><br>
-
                 </div>
 
             </section><br>

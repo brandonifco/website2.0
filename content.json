@@ -82,7 +82,13 @@
     "obedienceTraining": {
       "title": "Obedience Training: Build a Strong Bond with Your Pet",
       "description": "Obedience training is the foundation for a well-behaved pet. Our training programs focus on teaching essential commands and building a strong bond between you and your pet.",
-      "coreSkills": ["Sit", "Stay", "Come", "Heel", "Leave it"],
+      "coreSkills": [
+        "Sit",
+        "Stay",
+        "Come",
+        "Heel",
+        "Leave it"
+      ],
       "methods": [
         "Positive Reinforcement: We use rewards and praise to motivate your pet.",
         "Tailored Training: We customize our training approach to your pet's breed, age, and personality."
@@ -96,23 +102,24 @@
     },
     "containmentSystems": {
       "title": "Professional Pet Containment Training",
-      "description": "Proper training is essential for effective electronic pet containment. It's not about the 'shock'—it's about teaching boundaries, training the retreat response, and addressing separation anxiety to ensure your pet's safety and well-being.",
+      "description": "Proper training is the true game-changer in electronic pet containment. It’s not about the shock; it’s about <em>communication</em>, <em>consistency</em>, and <em>compassion</em>. We focus on teaching boundaries, reinforcing the retreat response, and addressing separation anxiety so your pet stays happy, healthy, and safely contained.",
       "howItWorks": [
-        "<strong>Understanding Boundaries</strong> – Pets don’t naturally associate stimulation with a boundary. We use calculated steps to ensure they make the right connection without fear or confusion.",
-        "<strong>The Retreat Response</strong> – When stimulated, a pet’s instinct may be to flee through the boundary. We teach them to retreat back into the safe zone instead.",
-        "<strong>Managing Separation Anxiety</strong> – Dogs, as pack animals, experience separation anxiety, which can cause them to breach boundaries. Addressing this is crucial for effective containment."
+        "<strong>Understanding Boundaries</strong><br>Pets don’t instinctively understand that a signal means 'stop here.' We set up a controlled environment and use clear, customized steps to help your pet make the right connection without fear or confusion. Along the way, we strengthen the bond between you and your pet.<br><br>",
+        "<strong>The Retreat Response</strong><br>Without proper training, a pet’s natural instinct is often to run through the boundary when stimulated. Retreating back into the safe zone is a learned behavior, taught through positive, consistent training.<br><br>",
+        "<strong>Managing Separation Anxiety</strong><br>Separation anxiety is one of the most critical and often overlooked components of successful electronic pet containment. We don’t just train your pet to respect a boundary; we help them feel secure within it.<br><br>Dogs are pack animals. In the wild or even just in your living room, they are hardwired to stay close to their group. When you leave, they don’t just miss you. They feel distressed and anxious, unsure of when you’ll return. This stress can lead to fence breaches and other undesirable behaviors.<br><br>",
+        "<strong>And as for Cats?</strong><br>Cats typically don’t experience separation anxiety the way dogs do. Instead, they are more likely to sit in a window, judging you for taking so long to return with snacks. As a result, containment training for cats focuses less on emotional reassurance and more on clear boundary teaching."
       ],
       "benefits": [
-        "<i>'I’ll just lead my pet into the boundary to teach them.'</i><ul><li><strong>This can create fear and distrust. Proper guidance is necessary for a stress-free learning experience.</strong></li></ul>",
-        "<i>'The flags will show my dog the boundary.'</i><ul><li><strong>Dogs rely on scent more than sight and may not see the flags. Flags are for humans—we use other methods to teach pets effectively.</strong></li></ul>",
-        "<i>'If my pet keeps escaping, I need a stronger shock.'</i><ul><li><strong>Often, escaping is due to separation anxiety, not defiance. Increasing stimulation can worsen anxiety and lead to behavioral issues.</strong></li></ul>",
-        "<i>'I'll try training myself and call the pros if needed.'</i><ul><li><strong>DIY training mistakes can cause fear, confusion, and behavioral problems like de-socialization, noise sensitivity, and house soiling. Professional training prevents these issues.</strong></li></ul>"
+        "<em>'I’ll just lead my pet into the boundary. They’ll get shocked and know not to go there anymore!'</em><ul><li><strong>This approach almost always creates fear and confusion. Pets need clear, supportive guidance to build confidence, not trauma.</strong></li></ul>",
+        "<em>'The flags will show my dog the boundary.'</em><ul><li><strong>Not exactly. Dogs rely on scent more than sight, and flags typically don’t register as meaningful to them. Flags are placed for your awareness so you don’t accidentally guide your pet into the boundary. We use smarter, more effective methods to teach boundaries.</strong></li></ul>",
+        "<em>'If my pet keeps escaping, I need a stronger shock.'</em><ul><li><strong>Repeated escapes usually indicate stress or anxiety, not defiance. Increasing the correction can make the problem worse. The solution isn’t stronger shocks—it’s smarter training.</strong></li></ul>",
+        "<em>'I'll try training myself and call the pros if needed.'</em><ul><li><strong>We understand the desire to save money. However, DIY mistakes with electronic pet containment often lead to long-term behavior problems like fearfulness, noise sensitivity, and even regression of potty training. Professional training sets your pet up for success from day one and often costs much less in the long run.</strong></li></ul>"
       ],
       "services": [
-        "Dogs: Experience the world through scent and rely on pack dynamics. Separation anxiety can affect containment reliability.",
-        "Cats: Rely more on sight, making flag placement more effective. Their independent nature can make training easier or harder, depending on their willingness to interact."
+        "<strong>Dogs:</strong> Dogs learn through scent, structure, and social bonds. Their pack-driven instincts mean that separation anxiety can directly affect containment success. We train the whole dog, not just boundary behavior.<br><br>",
+        "<strong>Cats:</strong> Cats are more visual and independent. This can make training either easier or harder, depending entirely on your cat’s mood and willingness to engage. Either way, we have a plan tailored for your cat."
       ],
-      "cta": "SCHEDULE A CONSULTATION"
+      "cta": "Schedule a Consultation"
     }
   },
   "whyInvisibleFence": {
@@ -163,15 +170,15 @@
         "questions": [
           {
             "question": "What services do you offer?",
-            "answer": "We offer behavior training, obedience training, and installation, maintenance, and service of Invisible Fence® Brand electronic pet containment systems."
+            "answer": "We provide professional, in-person pet containment training right at your home, as well as remote training support via video conferencing. You’ll also get access to a curated library of training videos tailored to your pet’s breed and temperament. In addition, we offer expert installation, maintenance, and servicing of Invisible Fence<sup>®</sup> Brand electronic pet containment systems."
           },
           {
             "question": "How long does training typically take?",
-            "answer": "The duration of training varies depending on the specific needs of your pet and the complexity of the behavioral issues. However, most clients see significant improvement within a few weeks of consistent training."
+            "answer": "On average, training takes about a week and a half from start to finish — but that’s just a ballpark. The exact timeline depends on several factors, including the size and complexity of your containment area, your pet’s personality, age, previous training experience, and even their energy level. <br>We follow a proven building block approach, meaning we don’t rush or skip steps. We start with the basics—teaching your pet to recognize the boundary and understand what’s expected. From there, we gradually increase distractions and reinforce their response in real-world situations. We only move forward when your pet has confidently mastered each step, so we’re building a strong, reliable foundation for long-term success."
           },
           {
             "question": "What types of pets do you work with?",
-            "answer": "We work with a variety of pets, including dogs and cats."
+            "answer": "Our training methods are designed primarily for dogs and cats, but we’ve worked successfully with a variety of pets over the years. If your animal has a curious mind and needs boundaries, chances are we can help. We’re always happy to talk through your specific needs and see if we’re the right fit.  We have PHD animal behaviorists at our fingertips, so if needed, we can quickly and easily consult with other experts."
           }
         ]
       },
@@ -180,19 +187,23 @@
         "questions": [
           {
             "question": "How does Invisible Fence® Brand work?",
-            "answer": "The Invisible Fence® Brand system uses a wired boundary to keep your pet safely confined to your property. A lightweight, waterproof Computer Collar® signals your pet when they approach the boundary."
+            "answer": "We have customized technologies for every situation, including Invisible Fence Brand professional GPS technology. <a href=whyif.php>Click here to learn more</a>"
           },
           {
             "question": "Is it safe for my pet?",
-            "answer": "Yes, the Invisible Fence® Brand system is completely safe for your pet. The static correction is mild and harmless."
+            "answer": "Yes—safety is always our top priority.  We’ll always advise our clients based on safety first and foremost.  The Invisible Fence® Brand system uses a mild, adjustable stimulation delivered through your pet’s Computer Collar®. It’s not painful—think of it like a gentle tap on the shoulder that says, 'Hey, not that way.'"
           },
           {
             "question": "What happens if the system stops working?",
-            "answer": "We offer 24/7 customer support to assist with any system issues. We can also provide emergency service to quickly resolve any problems."
+            "answer": "We provide full customer support to troubleshoot and walk you through quick fixes when possible, and if the issue can’t be resolved remotely, we’ll schedule an on-site service visit right away. We even offer emergency service. We aim to get your system up and running smoothly again with minimal downtime, so your pet stays safe and your peace of mind stays intact."
           },
           {
             "question": "What is the warranty period for the system?",
-            "answer": "The warranty period for Invisible Fence® Brand systems varies depending on the specific product and installation package. Please consult with a representative for more information."
+            "answer": "Warranty coverage varies slightly depending on the specific product or component. Most of the equipment we install comes with a lifetime guarantee when you purchase a complete installation package. That includes key parts like the transmitter, the boundary wire, and your pet’s Computer Collar®. Your representative will walk you through the specifics of your system’s warranty, so you’ll know exactly what’s covered and what to expect in the rare event that something goes wrong."
+          },
+          {
+            "question": "We live on a lake.  Can our pet have access to the water?",
+            "answer": "Yes! We specialize in customized solutions for homes near water. Whether it’s swimming access, dock safety, or beach playtime, we’ll work with you to make it happen. Let’s talk about what fits your lifestyle best."
           }
         ]
       }
@@ -200,10 +211,10 @@
     "contact": "For additional questions, feel free to contact us directly at (231) 938-1138 or email us at contact@greatlakescontainment.com."
   },
   "aboutUs": {
-    "intro": "At Great Lakes Containment & Training, we're passionate about pets, just like you. We provide peace of mind by keeping your dog or cat safe and happy at home. As an exclusive provider of Invisible Fence® Brand products, we offer superior technology and personalized service to create a perfect solution for your pet and your property.",
-    "companyHistory": "Established in 1991, Great Lakes Containment & Training is focused on our customers. Our business is committed to constant improvement to provide the highest level of services for you and your pet, with a convenient and professional experience from your first contact…through training completion and beyond.",
-    "missionStatement": "We work in a consultative environment to ensure that each client receives an Invisible Fence® Brand solution that meets their individual needs. We continue to support each customer into the future, creating a lifetime of value.",
-    "coreValues": "We believe in patience, positivity, and a deep respect for the bond between pets and their owners.",
+    "intro": "At <strong>Great Lakes Containment & Training</strong>, we're passionate about pets, just like you. We provide <em>peace of mind</em> by keeping your dog or cat <em>safe and happy at home</em>. As an <strong>exclusive provider</strong> of <strong>Invisible Fence<sup>®</sup> Brand</strong> products, we offer superior technology and personalized service to create a perfect solution for your pet and your property.",
+    "companyHistory": "Established in <strong>1991</strong>, <strong>Great Lakes Containment & Training</strong> has always put customers first. Our focus has been on <em>continuous improvement</em>: enhancing our services, streamlining your experience, and delivering top-tier care for both you and your pet. From the moment you reach out to us through the final stages of training (and well beyond), we’re here to ensure a seamless and professional experience.",
+    "missionStatement": "We’re committed to <strong>educating pet owners</strong> on the critical importance of <strong>professional guidance</strong> when introducing electronic pet collars. Our <em>consultative approach</em> ensures that every client receives a solution tailored to their unique needs and goals. Simply put: our mission is to create a <em>safe, supportive environment</em> that strengthens the bond between you and your pet. And our support doesn’t stop after installation - we’re here for the long haul, building lasting value and lifelong peace of mind.",
+    "coreValues": "We lead with <em>patience</em>, <em>positivity</em>, and a deep respect for the <strong>powerful bond between pets and their people</strong>. These values guide every interaction, every solution, and every relationship we build.",
     "teamImageURL": "images/team_photo.jpg"
   },
   "contact": {
@@ -232,7 +243,11 @@
           "time": "Closed"
         }
       ],
-      "holidays": ["New Year's Day", "Thanksgiving", "Christmas Day"]
+      "holidays": [
+        "New Year's Day",
+        "Thanksgiving",
+        "Christmas Day"
+      ]
     },
     "map": {
       "embedURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d584.3566027916106!2d-85.50819918181729!3d44.763899728430125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881fd1e2e55025bb%3A0x405bcccf8047b00a!2sInvisible%20Fence%20Brand%20by%20Great%20Lakes%20Containment%20%26%20Training!5e1!3m2!1sen!2sus!4v1736458665916!5m2!1sen!2sus",

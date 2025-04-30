@@ -47,10 +47,7 @@ include 'header.php';
                 <p data-content="aboutUs.coreValues"></p>
             </div>
 <br>
-            <!-- Team Image Section -->
-            <div id="team-image" class="reg">
-                <img id="team-image" src="" alt="Our Team" data-content="aboutUs.teamImageURL">
-            </div>
+
         </section><br>
     </div>
 

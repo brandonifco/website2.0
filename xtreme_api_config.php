@@ -13,11 +13,17 @@
  * @license  Creative Commons Attribution-NonCommercial 4.0 International
  *             (CC BY-NC 4.0)
  * @link     https://scheduler.xtremecrm.com/
+  * Loads Xtreme Scheduler API credentials from .env
  */
 
+require_once __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->safeLoad();        // won’t throw if .env missing
+
 $config = [
-    'apiKey' => '15FAA5F3-8772-42D8-B819-E101808DCFE2',
-    'apiBaseUrl' => 'https://scheduler.xtremecrm.com',
-    'dealerCode' => 'TESTING',
+    'apiKey'     => $_ENV['XTREME_API_KEY']     ?? '',
+    'apiBaseUrl' => $_ENV['XTREME_API_BASE']    ?? '',
+    'dealerCode' => $_ENV['XTREME_DEALER_CODE'] ?? '',
 ];
 ?>

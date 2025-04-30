@@ -1,6 +1,0 @@
-tax_rate_code,tax_rate_name,tax_rate_amount,zone_code,tax_category_code
-SHEBOYGAN-53001,wi-sales-tax-rate-53001,0.055,US-WI,wi-sales-tax-rate
-DODGE-53002,wi-sales-tax-rate-53002,0.055,US-WI,wi-sales-tax-rate
-DODGE-53003,wi-sales-tax-rate-53003,0.055,US-WI,wi-sales-tax-rate
-BASEBALL-53004,wi-sales-tax-rate-53004,0.055,US-WI,wi-sales-tax-rate
-MILWAUKEE-53005,wi-sales-tax-rate-53005,0.059,US-WI,wi-sales-tax-rate

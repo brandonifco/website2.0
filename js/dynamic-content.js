@@ -136,7 +136,7 @@ function populateContent(content) {
                     })
                     .join('');
             } else {
-                element.textContent = value;
+                element.innerHTML = value;
             }
         } else {
             console.warn(`No content found for key: ${key}`);

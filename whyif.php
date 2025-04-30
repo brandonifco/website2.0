@@ -30,7 +30,7 @@ include 'header.php';
         <section id="key-features" class="reg">
             <p>We service and train on all
             systems, but we trust Invisible Fence<sup>®</sup> Brand
-            exclusively for our own pets—and yours. Why? Because
+            exclusively for our own pets-and yours. Why? Because
             Invisible Fence<sup>®</sup> Brand offers the most reliable
             and advanced technology, whether you prefer a wireless
             GPS system or traditional wired systems. Our team of
