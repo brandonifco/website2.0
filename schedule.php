@@ -56,6 +56,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($postData));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);          // abort after 10 s if the API stalls
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); // verify the server’s certificate
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);    // require a valid host name
     curl_setopt(
         $ch, CURLOPT_HTTPHEADER, [
         'Content-Type: application/json',
