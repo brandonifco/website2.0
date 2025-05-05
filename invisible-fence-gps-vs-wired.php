@@ -71,6 +71,17 @@ include 'header.php';
 <body>
     <section class="reg">
     <br><figure class="hero-img"><img src="images/hero-dog-lawn.jpg.png" alt="Golden retriever running freely on a lawn with no visible fence" loading="eager"></figure>
+    <!-- Headline -->
+<h1 style="
+     font-size:4rem;            /* responsive base size  */
+     font-weight:700;           /* bold for emphasis     */
+     text-align:center;         /* centered across width */
+     margin:1rem auto 2rem;     /* top, auto‑center, bottom */
+     max-width:40ch;            /* comfortable line‑length */
+">
+  Invisible Fence GPS vs Wired: Which Is Best for Your Dog in 2025?
+</h1>
+
     <!-- Main Content Area -->
     <div id="main-content" class="content-container">
 
@@ -117,7 +128,14 @@ include 'header.php';
 <!-- ===================== Wired Invisible Fence Section ===================== -->
 <section id="wired-system" class="reg">
     <h2>How Wired Invisible Fencing Works</h2>
-    <p><br><img src="images/wired-loop-diagram.png" class="float-right md:w-1/2" alt="Diagram of a wired Invisible Fence loop buried around a rectangular yard"> A wired
+    <p><br><img src="images/wired-loop-diagram.png" class="float-right md:w-1/2" style="
+       float:right;          /* text wraps on the left */
+       width:100%;           /* responsive on small screens */
+       max-width:50%;        /* but never wider than half the content column */
+       height:auto;          /* keep aspect ratio */
+       margin:0 0 1rem 2rem; /* top=0, right=0, bottom=1rem, left=2rem */
+       border-radius:8px;    /* optional softened corners */
+     " alt="Diagram of a wired Invisible Fence loop buried around a rectangular yard"> A wired
     <a href="/whyif.php"
    style="background:none !important;
           display:inline !important;
@@ -141,13 +159,19 @@ include 'header.php';
     </p>
 
     <!-- Pros -->
-    <br><figure><img src="images/training-with-flags-800.jpg"
-     srcset="images/training-with-flags-800.jpg 800w,
-             images/training-with-flags-1600.jpg 1600w"
-     sizes="(min-width: 768px) 50vw, 100vw"
-     alt="Technician guiding a dog away from white boundary flags"
-     class="float-right"><figcaption class="caption">Flag‑based retreat training on day 1.</figcaption></figure><br>
+    <br> <p>   
+    <img src="images/training-with-flags-800.jpg"
+         alt="Technician guiding a dog away from white boundary flags"
+         style="
+
+                width:100%;           /* responsive on very small screens     */
+                max-width:100%;        /* never wider than half the content    */
+                height:auto;          /* maintain aspect ratio                */
+                margin:0 2rem 1rem 0; /* top 0  | right 0 | bottom 1rem | left 2rem */
+                border-radius:8px;    /* soft corners—adjust or remove as needed */
+                ">
     <h3>Pros of Wired Systems</h3>
+
     <ul>
         <li><strong>Rock‑solid reliability</strong>—signal never drifts or weakens.</li>
         <li><strong>Custom boundary shapes</strong>—hug flower beds or exclude pools and gardens.</li>
@@ -162,7 +186,7 @@ include 'header.php';
             trenchless blade for minimal impact).</li>
         <li><strong>Harder to adjust later</strong>—moving flower beds or expanding the yard means re‑burying wire.</li>
         <li><strong>Wire breaks</strong> (e.g., from aeration or digging) require pinpoint troubleshooting.</li>
-    </ul>
+    </ul></p>
 </section><br>
 <!-- ===================== GPS Invisible Fence Section ===================== -->
 <section id="gps-system" class="reg">
@@ -174,7 +198,16 @@ include 'header.php';
         but without any ground disturbance—perfect for large estates, wooded lots, or properties that change with the
         seasons.
     </p>
-
+    <br><img src="images/gps-boundary.jpeg" class="float-left md:w-1/3" 
+    style="
+       float:left;          /* text wraps on the right */
+       width:100%;           /* responsive on small screens */
+       max-width:50%;        /* but never wider than half the content column */
+       height:auto;          /* keep aspect ratio */
+       margin:0 0 1rem 2rem; /* top=0, right=0, bottom=1rem, left=2rem */
+       border-radius:8px;    /* optional softened corners */
+     "
+    alt="Invisible Fence GPS app showing virtual pet boundary on a map">
     <!-- Pros -->
     <h3>Pros of GPS Systems</h3>
     <ul>
@@ -201,7 +234,7 @@ include 'header.php';
         Choosing the right Invisible Fence® technology comes down to your yard’s layout, obstacles, and how often you
         expect your boundary to change. Use the checklist below to see where you fit:
     </p>
-
+    <br><img src="images/side-by-side.jpeg" alt="Infographic comparing wired and GPS fence features side by side" style="width:100%; max-width:50%; margin:auto;">
     <div class="fit-grid">
         <div class="fit-column">
             <h3>Wired is usually better if&hellip;</h3>
