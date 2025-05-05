@@ -191,11 +191,11 @@ try {
     $mail->clearAddresses();
     $mail->addAddress($toUser);
     $mail->Subject = 'Free Consultation with Great Lakes Containment and Training Confirmed!';
-    $mail->Body = "<p>Dear Customer,</p>" .
+    $mail->Body = "<p>Dear {$customerFirstName},</p>" .
                   "<p>Your appointment has been successfully reserved:</p>" .
                   "<ul><li><strong>Date:</strong> " . date('l, F j, Y', strtotime($start)) . "</li>" .
                   "<li><strong>Time:</strong> " . date('g:i A', strtotime($start)) . "</li></ul>" .
-                  "<p>If you have any questions, feel free to contact us at {$escapedPhone}.</p>" .
+                  "<p>If you have any questions, feel free to contact us at {$businessPhone}.</p>" .
                   "<p>Thank you!</p>";
     $mail->send();
 } catch (Exception $e) {
@@ -238,7 +238,7 @@ try {
         <p>
             If you have any questions, feel free to call us at
             <?php if (!empty($businessPhone)): ?>
-                <?php echo htmlspecialchars($businessPhone); ?>
+                <?php echo $businessPhone; ?>
             <?php else: ?>
                 <span data-content="contact.contactInformation.phoneNumber"></span>
             <?php endif; ?>

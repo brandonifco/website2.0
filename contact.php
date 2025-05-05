@@ -25,18 +25,21 @@ include 'header.php';
             <section class="reg">
                 <!-- Contact Information Section -->
                 <div id="contact-info">
+                    Phone:
                     <p id="contact-phone" data-content="contact.contactInformation.phoneNumber"></p>
+                    Email:
                     <p id="contact-email" data-content="contact.contactInformation.emailAddress"></p>
+                    Address:
                     <p id="contact-address" data-content="contact.contactInformation.physicalAddress"></p>
                     <p id="contact-description" data-content="contact.contactInformation.description"></p>
                 </div>
 
                 <!-- Operating Hours Section -->
                 <div id="operating-hours">
-                    <h2>Operating Hours</h2><br>
-                    <ul id="hours-list" data-content="contact.operatingHours.hours"></ul><br>
-                    <p>Closed on:</p><br>
-                    <ul id="holidays-list" data-content="contact.operatingHours.holidays"></ul><br>
+                    <h2>Operating Hours</h2>
+                    <ul id="hours-list" data-content="contact.operatingHours.hours"></ul>
+                    <p><strong>Closed on:</strong></p>
+                    <ul id="holidays-list" data-content="contact.operatingHours.holidays"></ul>
                 </div>
 
                 <!-- Map Section -->

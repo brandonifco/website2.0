@@ -34,7 +34,7 @@
       }
     ]
   },
-  "services": {
+  "containment": {
     "title": "Our Professional Pet Services",
     "behaviorTraining": {
       "title": "Behavior Training: Transform Your Pet's Behavior",
@@ -220,9 +220,9 @@
   "contact": {
     "contactInformation": {
       "title": "Get in Touch",
-      "phoneNumber": "(231) 938-1138",
-      "emailAddress": "Email: contact@greatlakescontainment.com",
-      "physicalAddress": "Address: 3501 Kirkland Court #A, Williamsburg, MI 49690",
+      "phoneNumber": "<a href='tel:2319381138'>(231)938-1138</a>",
+      "emailAddress": "<a href='mailto:contact@greatlakescontainment.com'>contact@greatlakescontainment.com</a>",
+      "physicalAddress": "<a href='https://www.google.com/maps/place/Invisible+Fence+Brand+by+Great+Lakes+Containment+%26+Training/@44.7640714,-85.5102359,778m/data=!3m1!1e3!4m15!1m8!3m7!1s0x881fd1e2f05c8b6d:0x7e0954a225a3dbee!2s3501+Kirkland+Ct+%23+A,+Williamsburg,+MI+49690!3b1!8m2!3d44.7640714!4d-85.507661!16s%2Fg%2F11qzb049dq!3m5!1s0x881fd1e2e55025bb:0x405bcccf8047b00a!8m2!3d44.7640714!4d-85.507661!16s%2Fg%2F1v3kj3dk?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D' target='_blank'>3501 Kirkland Court #A, Williamsburg, MI 49690</a>",
       "description": "We are just south of Bunker Hill Road, right across from the water!"
     },
     "contactForm": {
