@@ -95,6 +95,9 @@ foreach ($appointments as $appointment) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose an Appointment</title>
+    <meta name="description" content="Admin view—see all scheduled consultations and service appointments for Great Lakes Containment & Training. Secure, up‑to‑date list.">
+    <link rel="canonical" href="https://glcontainmenttraining.com/listappointments.php">
+
     <script>
         function updateSelectedAppointment(details) {
             const selectedDetailsField = document.getElementById(
@@ -149,7 +152,7 @@ foreach ($appointments as $appointment) {
                     readonly style="width: 100%; margin-bottom: 20px;">
                 </div>
 
-                <button type="submit" class="btn">CHOOSE APPOINTMENT</button>
+                <button type="submit" class="cta-button">CHOOSE APPOINTMENT</button>
             </form>
         <?php endif; ?>
         </section>

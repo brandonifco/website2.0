@@ -20,8 +20,8 @@
     font-family: 'Rockwell Nova Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Rockwell Nova Bold'), url('fonts/RockwellNova-Bold.woff') format('woff'),
-        url('fonts/RockwellNova-Bold.ttf') format('truetype');
+    src: local('Rockwell Nova Bold'), url('RockwellNova-Bold.woff') format('woff'),
+        url('RockwellNova-Bold.ttf') format('truetype');
     ;
 }
 

@@ -214,6 +214,9 @@ try {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Appointment Confirmation</title>
+    <meta name="description" content="Thank you! Your consultation request has been received by Great Lakes Containment & Training. We will confirm your appointment shortly.">
+    <link rel="canonical" href="https://glcontainmenttraining.com/success.php">
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">

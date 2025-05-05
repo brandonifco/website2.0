@@ -10,6 +10,9 @@ include 'header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <meta name="description" content="Contact Great Lakes Containment & Training—request a free consultation or ask questions about our pet containment and training services. Phone, email, and map.">
+    <link rel="canonical" href="https://glcontainmenttraining.com/contact.php">
+
     <?php include 'styles.php' ?>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

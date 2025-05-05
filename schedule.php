@@ -110,6 +110,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule A Consultation</title>
+    <meta name="description" content="Schedule a free in‑home consultation with Great Lakes Containment & Training—choose your preferred date and time to start protecting your pet today.">
+    <link rel="canonical" href="https://glcontainmenttraining.com/schedule.php">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -158,8 +161,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <label for="comments">Comments (Optional):</label>
             <textarea id="comments" name="comments"></textarea>
-
-            <button type="submit">List Available Appointments</button>
+            <div id="cta-section">
+                <button type="submit" class="cta-button">LIST AVAILABLE APPOINTMENTS</button>
+            </div>
         </form>
             </section>
     </div>

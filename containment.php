@@ -9,6 +9,8 @@ include 'header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Containment Training</title>
+    <meta name="description" content="Invisible Fence® brand electronic pet‑containment installation and training. Safe, customizable underground or GPS dog fences across the Great Lakes region.">
+    <link rel="canonical" href="https://glcontainmenttraining.com/containment.php">
     <?php include 'styles.php' ?>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

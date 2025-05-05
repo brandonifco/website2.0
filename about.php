@@ -10,6 +10,9 @@ include 'header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <meta name="description" content="Family‑run Great Lakes Containment & Training—meet Brandon and the team behind our expert dog containment and obedience services. Passion, experience, and care.">
+    <link rel="canonical" href="https://glcontainmenttraining.com/about.php">
+
     <?php include 'styles.php' ?>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

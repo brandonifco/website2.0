@@ -35,7 +35,35 @@ html {
     overflow: visible;
     /* Allow visible overflow */
 }
-
+/* ---------- Comparison Table ---------- */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 1rem;       /* bump size a bit */
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem 1rem; /* room to breathe */
+    text-align: left;
+    border: 1px solid #e2e8f0; /* soft subtle grid */
+  }
+  
+  .comparison-table thead th {
+    background: #2d3748;   /* dark slate */
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .comparison-table tbody tr:nth-child(even) {
+    background: #f7fafc;   /* light gray zebra striping */
+  }
+  
+  .comparison-table tbody td:first-child {
+    font-weight: 600;      /* bold feature column */
+  }
+  
 a {
    /* color: var(--link-color);*/
     padding: 5px;
@@ -50,6 +78,23 @@ a:hover {
 a:visited {
     color: var(--link-visited);
 }
+
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    background-color: var(--button-color);
+    color: var(--foreground-color);
+    transition: background-color 0.3s;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+form button a:hover {
+    background-color: var(--button-hover-color);
+}
+
 #contact-form {
     width: 100%;
     max-width: 800px;
@@ -683,3 +728,15 @@ h2 {
     font-weight: normal;
     src: local('Rockwell Nova Extra Bold Italic'), url('RockwellNova-ExtraBoldItalic.woff') format('woff');
 }
+/* ---------- Inline text links ---------- */
+.text-link {
+    color: inherit;          /* same color as surrounding text */
+    text-decoration: none;   /* remove underline */
+    font-weight: inherit;    /* don’t adopt bold or button styling */
+  }
+  
+  .text-link:hover,
+  .text-link:focus {
+    text-decoration: underline;   /* subtle cue on hover/keyboard focus */
+  }
+  

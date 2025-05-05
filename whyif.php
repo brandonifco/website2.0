@@ -10,6 +10,9 @@ include 'header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Invisible Fence Brand?</title>
+    <meta name="description" content="Learn why Great Lakes Containment & Training trusts Invisible Fence® brand: proven safety, advanced technology, and veterinarian‑backed results for your pet.">
+    <link rel="canonical" href="https://glcontainmenttraining.com/whyif.php">
+
     <?php include 'styles.php' ?>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -59,7 +62,7 @@ include 'header.php';
 
     </div>
 
-    <script src="dynamic-content.js"></script>
+    <script src="js/dynamic-content.js"></script>
 </body>
 
 </html>

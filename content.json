@@ -339,6 +339,10 @@
       {
         "label": "Contact Us",
         "url": "contact.php"
+      },
+      {
+        "label":"Invisible Fence: GPS vs Wired",
+        "url":"invisible-fence-gps-vs-wired.php"
       }
     ],
     "copywriteInfo": "© 2025 BVG-Web-Services-LLC. All rights reserved.",
@@ -358,7 +362,7 @@
     ],
     "trustIndicators": [
       {
-        "name": "Invisible Fence® Brand",
+        "name": "Invisible Fence<sup>®</sup> Brand",
         "logoURL": "images/IFB_Authorized_Dealer_Logo_Color_Transparent.png"
       },
       {
