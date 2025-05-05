@@ -22,6 +22,34 @@ include 'header.php';
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>
+        /* ---------- Comparison Table ---------- */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 1rem;       /* bump size a bit */
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem 1rem; /* room to breathe */
+    text-align: left;
+    border: 1px solid #e2e8f0; /* soft subtle grid */
+  }
+  
+  .comparison-table thead th {
+    background: #2d3748;   /* dark slate */
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .comparison-table tbody tr:nth-child(even) {
+    background: #f7fafc;   /* light gray zebra striping */
+  }
+  
+  .comparison-table tbody td:first-child {
+    font-weight: 600;      /* bold feature column */
+  }
   /* responsive helpers */
   .hero-img img { width:100%; height:auto; border-radius:var(--border-radius-lg); }
 
