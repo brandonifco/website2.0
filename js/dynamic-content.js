@@ -110,25 +110,21 @@ function populateContent(content) {
                                     <h2>${item.title}</h2>
                                     <p>${item.description}</p>
                                 </div>`;
-                        } else if (item.category && item.questions) {
-                            // Handle FAQ categories and their questions
-                            return `
-                                <div class="faq-category">
-                                    
-                                    <ul>
+                            } else if (item.category && item.questions) {
+                                // Render each FAQ entry using <details> and <summary>, assuming plain strings
+                                return `
+                                    <div class="faq-category">
                                         ${item.questions
-                                    .map(
-                                        (question) => `
-                                                    
-                                                        <h2>${question.question}</h2>
-                                                        <p>${question.answer}</p>
-                                                        <br>
-                                                    `
-                                    )
-                                    .join('')}
-                                    </ul>
-                                </div>`;
-                        } else if (typeof item === 'string') {
+                                            .map(({ question, answer }) => `
+                                                <details>
+                                                    <summary><strong>${question}</strong></summary>
+                                                    <p>${answer}</p>
+                                                </details>
+                                            `)
+                                            .join('')}
+                                    </div>`;
+                            }          
+                             else if (typeof item === 'string') {
                             return `<li>${item}</li>`;
                         } else {
                             return `<div>${JSON.stringify(item)}</div>`;
