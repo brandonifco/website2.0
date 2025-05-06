@@ -142,7 +142,7 @@ $escapedPhone = !empty($businessPhone)
 
 
 
-$toAdmin = "brandonifco@gmail.com";
+$toAdmin = "admin@glcontainmenttraining.com";
 $toUser = filter_var($postData['emailAddress'], FILTER_VALIDATE_EMAIL);
 if (!$toUser) {
     echo "Invalid email address provided.";
