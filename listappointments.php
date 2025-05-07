@@ -91,73 +91,76 @@ foreach ($appointments as $appointment) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose an Appointment</title>
-    <meta name="description" content="Admin view—see all scheduled consultations and service appointments for Great Lakes Containment & Training. Secure, up‑to‑date list.">
+    <meta name="description"
+        content="Admin view—see all scheduled consultations and service appointments for Great Lakes Containment & Training. Secure, up‑to‑date list.">
     <link rel="canonical" href="https://glcontainmenttraining.com/listappointments.php">
 
     <script>
-        function updateSelectedAppointment(details) {
-            const selectedDetailsField = document.getElementById(
-              'selected-appointment-details');
-            selectedDetailsField.value = details;
-        }
+    function updateSelectedAppointment(details) {
+        const selectedDetailsField = document.getElementById(
+            'selected-appointment-details');
+        selectedDetailsField.value = details;
+    }
     </script>
 </head>
+
 <body>
     <?php require './header.php'; ?>
 
     <div class="content-container">
         <h1>Select an Appointment</h1>
         <section class="reg">
-        <?php if (empty($groupedAppointments)) : ?>
+            <?php if (empty($groupedAppointments)) : ?>
             <p>No available appointments at this time. Please try again later.</p>
-        <?php else: ?>
+            <?php else: ?>
             <form action="success.php" method="POST" class="appointment-form">
                 <!-- Hidden fields to retain query data -->
                 <?php foreach ($queryData as $key => $value): ?>
-    <input type="hidden" name="<?php echo htmlspecialchars($key); ?>" value="<?php echo htmlspecialchars($value); ?>">
-<?php endforeach; ?>
+                <input type="hidden" name="<?php echo htmlspecialchars($key); ?>"
+                    value="<?php echo htmlspecialchars($value); ?>">
+                <?php endforeach; ?>
                 <div class="appointment-options">
                     <?php foreach ($groupedAppointments as $date => $times): ?>
-                        <div class="appointment-date">
-                            <h2><?php echo htmlspecialchars($date); ?></h2>
-                            <?php foreach ($times as $time): ?>
-                                <div class="appointment-option">
-                                    <label>
-                                        <input type="radio" name="appointment" 
-                                        value="<?php
+                    <div class="appointment-date">
+                        <h2><?php echo htmlspecialchars($date); ?></h2>
+                        <?php foreach ($times as $time): ?>
+                        <div class="appointment-option">
+                            <label>
+                                <input type="radio" name="appointment" value="<?php
                                          echo htmlspecialchars($time['value']);
-                                        ?>" 
-                                        onchange="updateSelectedAppointment('<?php echo htmlspecialchars($date . ' at ' . $time['time']); ?>')">
-                                        <span class="appointment-time">
-                                            <?php echo htmlspecialchars(
+                                        ?>"
+                                    onchange="updateSelectedAppointment('<?php echo htmlspecialchars($date . ' at ' . $time['time']); ?>')">
+                                <span class="appointment-time">
+                                    <?php echo htmlspecialchars(
                                                 $time['time']
                                             ); ?>
-                                        </span>
-                                    </label>
-                                </div>
-                            <?php endforeach; ?>
+                                </span>
+                            </label>
                         </div>
+                        <?php endforeach; ?>
+                    </div>
                     <?php endforeach; ?>
                 </div>
 
                 <div style="margin-top: 20px;">
                     <label for="selected-appointment-details">
-                      Selected Appointment:</label>
-                    <input type="text" id="selected-appointment-details" 
-                    name="selectedAppointmentDetails" 
-                    readonly style="width: 100%; margin-bottom: 20px;">
+                        Selected Appointment:</label>
+                    <input type="text" id="selected-appointment-details" name="selectedAppointmentDetails" readonly
+                        style="width: 100%; margin-bottom: 20px;">
                 </div>
 
                 <button type="submit" class="cta-button">CHOOSE APPOINTMENT</button>
             </form>
-        <?php endif; ?>
+            <?php endif; ?>
         </section>
     </div>
 
     <?php require './footer.php'; ?>
 </body>
+
 </html>

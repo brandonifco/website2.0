@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Processes and confirms a reserved appointment.
  *
@@ -72,7 +73,8 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
 curl_setopt($ch, CURLOPT_FAILONERROR, true);
 curl_setopt(
-    $ch, CURLOPT_HTTPHEADER,
+    $ch,
+    CURLOPT_HTTPHEADER,
     [
         'Content-Type: application/json',
         'X-ApiKey: ' . $config['apiKey']
@@ -100,6 +102,7 @@ if (!$responseData['success']) {
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
 require 'vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
@@ -177,14 +180,14 @@ try {
     $mail->isHTML(true);
     $mail->Subject = 'New Appointment Reserved';
     $mail->Body =   "<p>New Appointment Reserved:</p>" .
-                    "<p><strong>Appointment Details:</strong><br>" .
-                    "<strong>Date:</strong> " . date('l, F j, Y', strtotime($start)) . "<br>" .
-                    "<strong>Time:</strong> " . date('g:i A', strtotime($start)) . "</p>" .
-                    "<p><strong>Customer Details:</strong><br>" .
-                    "<strong>Name:</strong> {$customerName}<br>" .
-                    "<strong>Email:</strong> {$customerEmail}<br>" .
-                    "<strong>Phone:</strong> {$customerPhone}<br>" .
-                    "<strong>Address:<br></strong> {$customerAddress}<br> {$cityStateZip}</p>";
+        "<p><strong>Appointment Details:</strong><br>" .
+        "<strong>Date:</strong> " . date('l, F j, Y', strtotime($start)) . "<br>" .
+        "<strong>Time:</strong> " . date('g:i A', strtotime($start)) . "</p>" .
+        "<p><strong>Customer Details:</strong><br>" .
+        "<strong>Name:</strong> {$customerName}<br>" .
+        "<strong>Email:</strong> {$customerEmail}<br>" .
+        "<strong>Phone:</strong> {$customerPhone}<br>" .
+        "<strong>Address:<br></strong> {$customerAddress}<br> {$cityStateZip}</p>";
     $mail->send();
 
     // User Email
@@ -192,11 +195,11 @@ try {
     $mail->addAddress($toUser);
     $mail->Subject = 'Free Consultation with Great Lakes Containment and Training Confirmed!';
     $mail->Body = "<p>Dear {$customerFirstName},</p>" .
-                  "<p>Your appointment has been successfully reserved:</p>" .
-                  "<ul><li><strong>Date:</strong> " . date('l, F j, Y', strtotime($start)) . "</li>" .
-                  "<li><strong>Time:</strong> " . date('g:i A', strtotime($start)) . "</li></ul>" .
-                  "<p>If you have any questions, feel free to contact us at {$businessPhone}.</p>" .
-                  "<p>Thank you!</p>";
+        "<p>Your appointment has been successfully reserved:</p>" .
+        "<ul><li><strong>Date:</strong> " . date('l, F j, Y', strtotime($start)) . "</li>" .
+        "<li><strong>Time:</strong> " . date('g:i A', strtotime($start)) . "</li></ul>" .
+        "<p>If you have any questions, feel free to contact us at {$businessPhone}.</p>" .
+        "<p>Thank you!</p>";
     $mail->send();
 } catch (Exception $e) {
     http_response_code(500); // Internal server error
@@ -209,6 +212,7 @@ try {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -218,38 +222,40 @@ try {
     <link rel="canonical" href="https://glcontainmenttraining.com/success.php">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     <?php require './header.php'; ?>
 
     <div class="content-container">
         <h1>Appointment Confirmed</h1>
         <section class="reg">
-        <p>Thank you for scheduling your appointment! Here are your details:</p>
-        <section class="confirmed">
-        <ul>
-            <li>Date:
-            <?php echo htmlspecialchars(date('l, F j, Y', strtotime($start))); ?>
-            </li>
-            <li>Time:
-            <?php echo htmlspecialchars(date('g:i A', strtotime($start))); ?></li>
-        </ul>
-        </section>
-        <p>
-            If you have any questions, feel free to call us at
-            <?php if (!empty($businessPhone)): ?>
-                <?php echo $businessPhone; ?>
-            <?php else: ?>
-                <span data-content="contact.contactInformation.phoneNumber"></span>
-            <?php endif; ?>
-        </p>
+            <p>Thank you for scheduling your appointment! Here are your details:</p>
+            <section class="confirmed">
+                <ul>
+                    <li>Date:
+                        <?php echo htmlspecialchars(date('l, F j, Y', strtotime($start))); ?>
+                    </li>
+                    <li>Time:
+                        <?php echo htmlspecialchars(date('g:i A', strtotime($start))); ?></li>
+                </ul>
+            </section>
+            <p>
+                If you have any questions, feel free to call us at
+                <?php if (!empty($businessPhone)): ?>
+                    <?php echo $businessPhone; ?>
+                <?php else: ?>
+                    <span data-content="contact.contactInformation.phoneNumber"></span>
+                <?php endif; ?>
+            </p>
 
         </section>
     </div>
 
     <?php require './footer.php'; ?>
 </body>
+
 </html>

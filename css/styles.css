@@ -728,15 +728,17 @@ h2 {
     font-weight: normal;
     src: local('Rockwell Nova Extra Bold Italic'), url('RockwellNova-ExtraBoldItalic.woff') format('woff');
 }
-/* ---------- Inline text links ---------- */
-.text-link {
-    color: inherit;          /* same color as surrounding text */
-    text-decoration: none;   /* remove underline */
-    font-weight: inherit;    /* don’t adopt bold or button styling */
-  }
-  
-  .text-link:hover,
-  .text-link:focus {
-    text-decoration: underline;   /* subtle cue on hover/keyboard focus */
-  }
-  
+/* responsive helpers */
+.hero-img img { width:100%; height:auto; border-radius:var(--border-radius-lg); }
+
+figure { margin:0 0 1.5rem; }
+figcaption.caption { font-size:.875rem; color:#4a5568; text-align:center; }
+
+/* floated images for medium+ screens */
+@media (min-width: 768px) {
+  .float-right { float:right; margin:0 0 1rem 2rem; }
+  .float-left  { float:left;  margin:0 2rem 1rem 0; }
+}
+
+/* optional video styling */
+.training-demo { width:100%; max-width:480px; display:block; margin:1rem auto; border-radius:var(--border-radius); }

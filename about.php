@@ -15,9 +15,9 @@ include 'header.php';
 
     <?php include 'styles.php' ?>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -30,26 +30,26 @@ include 'header.php';
             <div id="about-intro" class="reg">
                 <p data-content="aboutUs.intro"></p>
             </div>
-<br>
+            <br>
             <!-- Company History Section -->
             <div id="company-history" class="reg">
 
                 <h2>Our History</h2>
                 <p data-content="aboutUs.companyHistory"></p>
             </div>
-<br>
+            <br>
             <!-- Mission Statement Section -->
             <div id="mission-statement" class="reg">
                 <h2>Mission Statement</h2>
                 <p data-content="aboutUs.missionStatement"></p>
             </div>
-<br>
+            <br>
             <!-- Core Values Section -->
             <div id="core-values" class="reg">
                 <h2>Core Values</h2>
                 <p data-content="aboutUs.coreValues"></p>
             </div>
-<br>
+            <br>
 
         </section><br>
     </div>

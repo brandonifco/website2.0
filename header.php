@@ -23,27 +23,27 @@
 
     <!-- Navigation Menus -->
     <nav class="header-nav">
-    <!-- Desktop Menu -->
-    <ul class="desktop-menu">
-        <li><a href="/index.php">Home</a></li>
-        <li><a href="/containment.php">Containment</a></li>
-        <li><a href="/whyif.php">Why Invisible Fence</a></li>
-        <li><a href="/faq.php">FAQ</a></li>
-        <li><a href="/about.php">About</a></li>
-        <li><a href="/contact.php">Contact</a></li>
-        <li><a href="/schedule.php">Schedule</a></li>
-    </ul>
+        <!-- Desktop Menu -->
+        <ul class="desktop-menu">
+            <li><a href="/index.php">Home</a></li>
+            <li><a href="/containment.php">Containment</a></li>
+            <li><a href="/whyif.php">Why Invisible Fence</a></li>
+            <li><a href="/faq.php">FAQ</a></li>
+            <li><a href="/about.php">About</a></li>
+            <li><a href="/contact.php">Contact</a></li>
+            <li><a href="/schedule.php">Schedule</a></li>
+        </ul>
 
-    <!-- Mobile Menu -->
-    <ul class="mobile-menu">
-        <li><a href="/index.php">Home</a></li>
-        <li><a href="/containment.php">Containment</a></li>
-        <li><a href="/whyif.php">Why Invisible Fence</a></li>
-        <li><a href="/faq.php">FAQ</a></li>
-        <li><a href="/about.php">About</a></li>
-        <li><a href="/contact.php">Contact</a></li>
-        <li><a href="/schedule.php">Schedule</a></li>
-    </ul>
+        <!-- Mobile Menu -->
+        <ul class="mobile-menu">
+            <li><a href="/index.php">Home</a></li>
+            <li><a href="/containment.php">Containment</a></li>
+            <li><a href="/whyif.php">Why Invisible Fence</a></li>
+            <li><a href="/faq.php">FAQ</a></li>
+            <li><a href="/about.php">About</a></li>
+            <li><a href="/contact.php">Contact</a></li>
+            <li><a href="/schedule.php">Schedule</a></li>
+        </ul>
     </nav>
 </header>
 

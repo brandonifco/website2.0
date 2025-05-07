@@ -1,4 +1,5 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -113,4 +114,3 @@ try {
     http_response_code(500);
     echo "Error sending email: " . htmlspecialchars($mail->ErrorInfo);
 }
-?>

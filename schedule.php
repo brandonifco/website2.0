@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Schedule.php
  *
@@ -60,9 +61,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); // verify the server’s certificate
     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);    // require a valid host name
     curl_setopt(
-        $ch, CURLOPT_HTTPHEADER, [
-        'Content-Type: application/json',
-        'X-ApiKey: ' . $config['apiKey']
+        $ch,
+        CURLOPT_HTTPHEADER,
+        [
+            'Content-Type: application/json',
+            'X-ApiKey: ' . $config['apiKey']
         ]
     );
 
@@ -87,8 +90,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Redirect to listAppointments.php with the generated query string
             header(
-                "Location: listappointments.php?$queryString" 
-                . '&dealerCode=' . $config['dealerCode']
+                "Location: listappointments.php?$queryString"
+                    . '&dealerCode=' . $config['dealerCode']
             );
             exit;
         }
@@ -98,14 +101,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $entityId = $responseBody['entityId'];
         $successMessage = "Entity ID retrieved successfully: $entityId";
     } else {
-        $errorMessage = "Failed to retrieve Entity ID. Error: " 
-        . ($responseBody['message'] ?? 'Unknown error.');
+        $errorMessage = "Failed to retrieve Entity ID. Error: "
+            . ($responseBody['message'] ?? 'Unknown error.');
     }
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,10 +119,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     <?php require 'header.php'; ?>
 
@@ -133,41 +138,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <?php htmlspecialchars($errorMessage) ?>
             </div>
         <?php endif; ?>
-            <section class="reg">
-        <form id="contact-form" method="POST" action="">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
+        <section class="reg">
+            <form id="contact-form" method="POST" action="">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
 
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
 
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city" required>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
 
-            <label for="state">State:</label>
-            <input type="text" id="state" name="state" required>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" required>
 
-            <label for="zip">ZIP Code:</label>
-            <input type="text" id="zip" name="zip" required>
+                <label for="zip">ZIP Code:</label>
+                <input type="text" id="zip" name="zip" required>
 
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
 
-            <label for="emailAddress">Email Address:</label>
-            <input type="email" id="emailAddress" name="emailAddress" required>
+                <label for="emailAddress">Email Address:</label>
+                <input type="email" id="emailAddress" name="emailAddress" required>
 
-            <label for="comments">Comments (Optional):</label>
-            <textarea id="comments" name="comments"></textarea>
-            <div id="cta-section">
-                <button type="submit" class="cta-button">LIST AVAILABLE APPOINTMENTS</button>
-            </div>
-        </form>
-            </section>
+                <label for="comments">Comments (Optional):</label>
+                <textarea id="comments" name="comments"></textarea>
+                <div id="cta-section">
+                    <button type="submit" class="cta-button">LIST AVAILABLE APPOINTMENTS</button>
+                </div>
+            </form>
+        </section>
     </div>
 
     <?php require 'footer.php'; ?>
 </body>
+
 </html>

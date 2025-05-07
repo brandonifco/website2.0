@@ -13,7 +13,7 @@
  * @license  Creative Commons Attribution-NonCommercial 4.0 International
  *             (CC BY-NC 4.0)
  * @link     https://scheduler.xtremecrm.com/
-  * Loads Xtreme Scheduler API credentials from .env
+ * Loads Xtreme Scheduler API credentials from .env
  */
 
 require_once __DIR__ . '/vendor/autoload.php';
