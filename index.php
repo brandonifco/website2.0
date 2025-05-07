@@ -15,7 +15,7 @@ include 'header.php';
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Great Lakes Containment & Training",
+        "name": "Invisible Fence Brand by Great Lakes Containment & Training",
         "image": "https://glcontainmenttraining.com/images/GreatLakesLogo.png",
         "@id": "https://glcontainmenttraining.com",
         "url": "https://glcontainmenttraining.com",
