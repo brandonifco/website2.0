@@ -23,166 +23,166 @@ include 'header.php';
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <style>
-    body {
-        background: #ffffff !important;
-    }
-
-    /* ---------- Comparison Table ---------- */
-    .comparison-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 1rem 0;
-        font-size: 1rem;
-        /* bump size a bit */
-    }
-
-    .comparison-table th,
-    .comparison-table td {
-        padding: 0.75rem 1rem;
-        /* room to breathe */
-        text-align: left;
-        border: 1px solid #e2e8f0;
-        /* soft subtle grid */
-    }
-
-    .comparison-table thead th {
-        background: #2d3748;
-        /* dark slate */
-        color: #fff;
-        font-weight: 600;
-    }
-
-    .comparison-table tbody tr:nth-child(even) {
-        background: #f7fafc;
-        /* light gray zebra striping */
-    }
-
-    .comparison-table tbody td:first-child {
-        font-weight: 600;
-        /* bold feature column */
-    }
-
-    .table-wrapper {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        margin-bottom: 1.5rem;
-    }
-
-    .table-wrapper table {
-        min-width: 600px;
-        /* prevents columns from squishing */
-    }
-
-    /* responsive helpers */
-    .hero-img img {
-        width: 100%;
-        height: auto;
-        border-radius: var(--border-radius-lg);
-    }
-
-    figure {
-        margin: 0 0 1.5rem;
-    }
-
-    figcaption.caption {
-        font-size: .875rem;
-        color: #4a5568;
-        text-align: center;
-    }
-
-    /* floated images for medium+ screens */
-    .float-left,
-    .float-right {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 1rem auto;
-        float: none;
-    }
-
-    @media (min-width: 768px) {
-        .float-right {
-            float: right;
-            margin: 0 0 1rem 2rem;
-            max-width: 50%;
+        body {
+            background: #ffffff !important;
         }
 
-        .float-left {
-            float: left;
-            margin: 0 2rem 1rem 0;
-            max-width: 50%;
+        /* ---------- Comparison Table ---------- */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 1rem;
+            /* bump size a bit */
         }
-    }
 
-
-    /* optional video styling */
-    .training-demo {
-        width: 100%;
-        max-width: 480px;
-        display: block;
-        margin: 1rem auto;
-        border-radius: var(--border-radius);
-    }
-
-    .page-title {
-        font-size: clamp(1.75rem, 5vw, 3rem);
-        /* scales with screen size */
-        font-weight: 700;
-        text-align: center;
-        margin: 1rem auto 2rem;
-        max-width: 40ch;
-        line-height: 1.2;
-    }
-
-    .responsive-img {
-        width: 100%;
-        height: auto;
-        border-radius: var(--border-radius, 8px);
-        display: block;
-        margin: 1rem auto;
-    }
-
-    .fit-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        margin: 2rem 0;
-    }
-
-    .fit-column {
-        flex: 1 1 100%;
-    }
-
-    @media (min-width: 768px) {
-        .fit-column {
-            flex: 1 1 45%;
-        }
-    }
-
-    .image-text-wrap {
-        display: flex;
-        align-items: flex-start;
-        gap: 20px;
-
-    }
-
-    .image-text-wrap img {
-        max-width: 300px;
-        height: auto;
-        flex-shrink: 0;
-    }
-
-    @media (max-width: 768px) {
-        .image-text-wrap {
-            flex-direction: column;
-            align-items: center;
+        .comparison-table th,
+        .comparison-table td {
+            padding: 0.75rem 1rem;
+            /* room to breathe */
             text-align: left;
+            border: 1px solid #e2e8f0;
+            /* soft subtle grid */
+        }
+
+        .comparison-table thead th {
+            background: #2d3748;
+            /* dark slate */
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .comparison-table tbody tr:nth-child(even) {
+            background: #f7fafc;
+            /* light gray zebra striping */
+        }
+
+        .comparison-table tbody td:first-child {
+            font-weight: 600;
+            /* bold feature column */
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 1.5rem;
+        }
+
+        .table-wrapper table {
+            min-width: 600px;
+            /* prevents columns from squishing */
+        }
+
+        /* responsive helpers */
+        .hero-img img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius-lg);
+        }
+
+        figure {
+            margin: 0 0 1.5rem;
+        }
+
+        figcaption.caption {
+            font-size: .875rem;
+            color: #4a5568;
+            text-align: center;
+        }
+
+        /* floated images for medium+ screens */
+        .float-left,
+        .float-right {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem auto;
+            float: none;
+        }
+
+        @media (min-width: 768px) {
+            .float-right {
+                float: right;
+                margin: 0 0 1rem 2rem;
+                max-width: 50%;
+            }
+
+            .float-left {
+                float: left;
+                margin: 0 2rem 1rem 0;
+                max-width: 50%;
+            }
+        }
+
+
+        /* optional video styling */
+        .training-demo {
+            width: 100%;
+            max-width: 480px;
+            display: block;
+            margin: 1rem auto;
+            border-radius: var(--border-radius);
+        }
+
+        .page-title {
+            font-size: clamp(1.75rem, 5vw, 3rem);
+            /* scales with screen size */
+            font-weight: 700;
+            text-align: center;
+            margin: 1rem auto 2rem;
+            max-width: 40ch;
+            line-height: 1.2;
+        }
+
+        .responsive-img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius, 8px);
+            display: block;
+            margin: 1rem auto;
+        }
+
+        .fit-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .fit-column {
+            flex: 1 1 100%;
+        }
+
+        @media (min-width: 768px) {
+            .fit-column {
+                flex: 1 1 45%;
+            }
+        }
+
+        .image-text-wrap {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+
         }
 
         .image-text-wrap img {
-            max-width: 100%;
+            max-width: 300px;
+            height: auto;
+            flex-shrink: 0;
         }
-    }
+
+        @media (max-width: 768px) {
+            .image-text-wrap {
+                flex-direction: column;
+                align-items: center;
+                text-align: left;
+            }
+
+            .image-text-wrap img {
+                max-width: 100%;
+            }
+        }
     </style>
 
 </head>
