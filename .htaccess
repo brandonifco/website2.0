@@ -12,3 +12,16 @@
     RewriteRule ^(wordpress/)?(wp-login\.php|xmlrpc\.php|setup-config\.php|install\.php)$ - [F,L]
 </IfModule>
 #################################################################
+# Simple IP throttle for repeated bad requests
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Track offenders based on repeated wp-admin attempts
+    RewriteCond %{REQUEST_URI} ^/(wordpress/)?wp-admin
+    RewriteCond %{ENV:bad_bot_counter} >5
+    RewriteRule ^ - [F,L,E=bad_bot_blocked:1]
+
+    # Increment an environment variable for each hit
+    RewriteCond %{REQUEST_URI} ^/(wordpress/)?wp-admin
+    RewriteRule ^ - [E=bad_bot_counter:%{ENV:bad_bot_counter}1]
+</IfModule>
