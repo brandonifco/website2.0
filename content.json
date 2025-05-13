@@ -258,7 +258,7 @@
       "desktop": [
         {
           "label": "Home",
-          "url": "index.php"
+          "url": "/"
         },
         {
           "label": "Containment Training",
@@ -284,7 +284,7 @@
       "mobile": [
         {
           "label": "Home",
-          "url": "index.php"
+          "url": "/"
         },
         {
           "label": "Containment Training",
@@ -313,7 +313,7 @@
     "sitemap": [
       {
         "label": "Home",
-        "url": "index.php"
+        "url": "/"
       },
       {
         "label": "Containment Training",
@@ -344,7 +344,7 @@
     "awardsCertifications": [
       {
         "label": "Best Pet Training Service 2024",
-        "url": "localhost:8000"
+        "url": "/"
       },
       {
         "label": "Certified by the APDT",

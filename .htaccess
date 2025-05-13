@@ -16,6 +16,15 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # Force HTTPS and non‑www
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} ^www\.glcontainmenttraining\.com$ [NC]
+    RewriteRule ^(.*)$ https://glcontainmenttraining.com/$1 [L,R=301]
+
+    # Fold ONLY the root /index.php into /
+    RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+    RewriteRule ^index\.php$ https://glcontainmenttraining.com/ [L,R=301]
+
     # Track offenders based on repeated wp-admin attempts
     RewriteCond %{REQUEST_URI} ^/(wordpress/)?wp-admin
     RewriteCond %{ENV:bad_bot_counter} >5
