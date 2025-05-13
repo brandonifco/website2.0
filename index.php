@@ -1,6 +1,4 @@
-<?php
-include 'header.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,6 +61,9 @@ include 'header.php';
 </head>
 
 <body>
+<?php
+include 'header.php';
+?>
     <!-- Main Content Area -->
     <div id="main-content">
         <div class="content-container">

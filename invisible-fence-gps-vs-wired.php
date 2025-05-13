@@ -1,7 +1,4 @@
-<?php
-// Include the header file (static nav now inside)
-include 'header.php';
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -188,6 +185,10 @@ include 'header.php';
 </head>
 
 <body>
+<?php
+// Include the header file (static nav now inside)
+include 'header.php';
+?>
     <section class="reg">
         <br>
         <figure class="hero-img"><img src="images/hero-dog-lawn.jpg.png" class="responsive-img"

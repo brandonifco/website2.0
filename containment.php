@@ -1,8 +1,3 @@
-<?php
-// Include the header file
-include 'header.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,6 +16,7 @@ include 'header.php';
 </head>
 
 <body>
+<?php require './header.php'; ?>
 
     <!-- Main Content Area -->
     <div id="main-content" class="content-container">

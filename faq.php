@@ -1,7 +1,3 @@
-<?php
-// Include the header file
-include 'header.php';
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,6 +42,8 @@ include 'header.php';
 </head>
 
 <body>
+<?php require './header.php'; ?>
+
     <!-- Main Content Area -->
     <div id="main-content" class="content-container">
         <h1 id="hero-tagline" data-content="faq.title"></h1><br>

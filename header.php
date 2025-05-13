@@ -25,7 +25,7 @@
     <nav class="header-nav">
         <!-- Desktop Menu -->
         <ul class="desktop-menu">
-            <li><a href="/index.php">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/containment.php">Containment</a></li>
             <li><a href="/whyif.php">Why Invisible Fence</a></li>
             <li><a href="/faq.php">FAQ</a></li>
@@ -36,7 +36,7 @@
 
         <!-- Mobile Menu -->
         <ul class="mobile-menu">
-            <li><a href="/index.php">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/containment.php">Containment</a></li>
             <li><a href="/whyif.php">Why Invisible Fence</a></li>
             <li><a href="/faq.php">FAQ</a></li>
