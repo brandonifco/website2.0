@@ -160,7 +160,7 @@
 
 
 /* Responsive Styling: Desktop View */
-@media (min-width: 1038px) {
+@media (min-width: 1070px) {
     .desktop-menu {
         display: flex; /* Show desktop menu on larger screens */
     }
@@ -171,7 +171,7 @@
 }
 
 /* Responsive Styling: Mobile View */
-@media (max-width: 1037px) {
+@media (max-width: 1069px) {
     .menu-toggle {
         display: block; /* Show toggle button */
         right: 4vw; /* Adjust the right spacing using viewport width */
