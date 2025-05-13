@@ -99,7 +99,7 @@ foreach ($appointments as $appointment) {
     <meta name="description"
         content="Admin view—see all scheduled consultations and service appointments for Great Lakes Containment & Training. Secure, up‑to‑date list.">
     <link rel="canonical" href="https://glcontainmenttraining.com/listappointments.php">
-
+    <meta name="robots" content="noindex">
     <script>
     function updateSelectedAppointment(details) {
         const selectedDetailsField = document.getElementById(
