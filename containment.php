@@ -35,7 +35,7 @@
                 <h3>Dog vs. Cat Training: What's Different?</h3>
                 <ul data-content="containment.containmentSystems.services"></ul><br>
                 <h3>The Bottom Line</h3>
-                <p>At <strong>Right Way Pet Containment</strong>, we provide the <strong>most effective, humane, and
+                <p>At <strong>Great Lakes Containment & Training</strong>, we provide the <strong>most effective, humane, and
                         stress-free pet containment training available</strong>. Our proven methods ensure your pet
                     understands boundaries, responds correctly, and remains happy and secure - without fear or
                     confusion.</p>

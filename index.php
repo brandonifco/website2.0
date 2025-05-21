@@ -85,7 +85,7 @@ include 'header.php';
 
             <section class="reg">
                 <p class="hero-intro">
-                    Great Lakes Containment & Training provides certified Invisible Fence® installation and professional
+                    Great Lakes Containment & Training provides certified Invisible Fence<sup>®</sup> Brand system installation and professional
                     pet training throughout the Great Lakes region. We specialize in safe, effective, and compassionate
                     containment solutions that keep your pet happy and home.
                 </p>

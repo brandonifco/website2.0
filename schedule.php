@@ -75,6 +75,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $responseBody = json_decode($response, true);
 
+// Debug to browser console
+echo "<script>console.log(" . json_encode([
+    'httpCode' => $httpCode,
+    'rawResponse' => $response,
+    'decoded' => $responseBody
+]) . ");</script>";
+
     if ($httpCode === 200 && $response) {
         $responseData = json_decode($response, true);
         if (isset($responseData['entityId'])) {
