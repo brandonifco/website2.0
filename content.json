@@ -257,6 +257,10 @@
     "menuItems": {
       "desktop": [
         {
+          "label": "Shop",
+          "url": "https://www.invisiblefence.com/shop"
+        },
+        {
           "label": "Home",
           "url": "/"
         },
@@ -282,6 +286,10 @@
         }
       ],
       "mobile": [
+        {
+          "label": "Shop",
+          "url": "https://www.invisiblefence.com/shop"
+        },
         {
           "label": "Home",
           "url": "/"

@@ -31,9 +31,9 @@
  *   - lastName: User's last name.
  */
 
+
 require_once 'xtreme_api_config.php'; // Include configuration file
 
-// Check if form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $postData = [
         'dealerCode' => $config['dealerCode'],
@@ -45,21 +45,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'zip' => $_POST['zip'],
         'phoneNumber' => $_POST['phoneNumber'],
         'emailAddress' => $_POST['emailAddress'],
-        'contactMe' => filter_var($_POST['contactMe'], FILTER_VALIDATE_BOOLEAN),
+        'contactMe' => isset($_POST['contactMe']) ? filter_var($_POST['contactMe'], FILTER_VALIDATE_BOOLEAN) : false,
         'source' => $_POST['source'] ?? '',
         'promotion' => $_POST['promotion'] ?? '',
         'ipAddress' => $_SERVER['REMOTE_ADDR'],
         'comments' => $_POST['comments'] ?? ''
     ];
 
+    $requiredFields = ['firstName', 'lastName', 'address', 'city', 'state', 'zip', 'phoneNumber', 'emailAddress'];
+    foreach ($requiredFields as $field) {
+        if (empty($_POST[$field])) {
+            $errorMessage = "Missing required field: $field";
+            break;
+        }
+    }
+
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $config['apiBaseUrl'] . '/getentityid');
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($postData));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 10);          // abort after 10 s if the API stalls
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); // verify the server’s certificate
-    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);    // require a valid host name
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
     curl_setopt(
         $ch,
         CURLOPT_HTTPHEADER,
@@ -69,49 +77,64 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ]
     );
 
+    error_log("Sending data to API: " . json_encode($postData));
+
     $response = curl_exec($ch);
+    $curlError = curl_error($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
 
-    $responseBody = json_decode($response, true);
+    $responseBody = null;
+    if ($response !== false) {
+        $responseBody = json_decode($response, true);
 
-// Debug to browser console
-echo "<script>console.log(" . json_encode([
-    'httpCode' => $httpCode,
-    'rawResponse' => $response,
-    'decoded' => $responseBody
-]) . ");</script>";
+        // Log API response regardless of error
+        error_log("📬 API Response:");
+        error_log("HTTP Code: $httpCode");
+        error_log("cURL Error: " . ($curlError ?: 'None'));
+        error_log("Raw Response: " . substr($response, 0, 500)); // limit if needed
+        error_log("Decoded Entity ID: " . ($responseBody['entityId'] ?? 'N/A'));
 
-    if ($httpCode === 200 && $response) {
-        $responseData = json_decode($response, true);
-        if (isset($responseData['entityId'])) {
-            $entityId = $responseData['entityId'];
-
-            // Build query string including all form data and entityId
-            $queryString = http_build_query(
-                array_merge(
-                    $_POST,
-                    ['entityId' => $responseData['entityId']]
-                )
-            );
-
-            // Redirect to listAppointments.php with the generated query string
-            header(
-                "Location: listappointments.php?$queryString"
-                    . '&dealerCode=' . $config['dealerCode']
-            );
-            exit;
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            $errorMessage = "Invalid JSON response: " . json_last_error_msg();
         }
     }
 
-    if ($httpCode === 200 && isset($responseBody['entityId'])) {
-        $entityId = $responseBody['entityId'];
-        $successMessage = "Entity ID retrieved successfully: $entityId";
-    } else {
-        $errorMessage = "Failed to retrieve Entity ID. Error: "
-            . ($responseBody['message'] ?? 'Unknown error.');
+    if (isset($errorMessage)) {
+        error_log("❌ API Error Log: " . json_encode([
+            'message' => $errorMessage,
+            'httpCode' => $httpCode,
+            'rawResponse' => $response,
+            'decodedResponse' => $responseBody,
+            'postData' => $postData
+        ]));
     }
+
+    if ($response === false) {
+        $errorMessage = "Request failed. cURL error: $curlError";
+    } elseif ($httpCode === 500) {
+        $errorMessage = "That ZIP code is outside of our area of coverage, please try again.";
+    } elseif ($httpCode !== 200) {
+        $errorMessage = "API returned HTTP $httpCode. Response: $response";
+    } elseif (json_last_error() !== JSON_ERROR_NONE) {
+        $errorMessage = "Invalid JSON response from API.";
+    } elseif (!isset($responseBody['entityId'])) {
+        $errorMessage = "Missing entityId in API response.";
+    } else {
+        // Success
+        $entityId = $responseBody['entityId'];
+        $queryString = http_build_query(array_merge($_POST, ['entityId' => $entityId]));
+        header("Location: listappointments.php?$queryString&dealerCode={$config['dealerCode']}");
+        exit;
+    }
+
+    // Final fallback — only set if no earlier error message
+    if (!isset($errorMessage)) {
+        $errorMessage = "Unknown error occurred.";
+    }
+    error_log("❌ API Error: $errorMessage | HTTP $httpCode | Response: $response");
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -138,14 +161,15 @@ echo "<script>console.log(" . json_encode([
         <h1>Please tell us about yourself:</h1>
         <?php if (isset($successMessage)) : ?>
             <div class="success-message">
-                <?php htmlspecialchars($successMessage) ?>
-            </div>
-        <?php elseif (isset($errorMessage)) : ?>
-            <div class="error-message">
-                <?php htmlspecialchars($errorMessage) ?>
+                <?= htmlspecialchars($successMessage) ?>
             </div>
         <?php endif; ?>
         <section class="reg">
+            <?php if (isset($errorMessage)) : ?>
+                <div class="error-message">
+                    <?= htmlspecialchars($errorMessage) ?>
+                </div>
+            <?php endif; ?>
             <form id="contact-form" method="POST" action="">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName" required>

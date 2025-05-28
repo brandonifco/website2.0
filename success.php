@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (!isset($_SESSION['reservation_attempts'])) {
+    $_SESSION['reservation_attempts'] = 0;
+}
+$_SESSION['reservation_attempts']++;
 
 /**
  * Processes and confirms a reserved appointment.
@@ -86,19 +91,36 @@ $response = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
 
-if ($httpCode !== 200 || !$response) {
-    http_response_code(502); // Bad Gateway — API unreachable
-    echo "Failed to reserve the appointment.";
-    exit;
-}
-
-
 $responseData = json_decode($response, true);
 if (!$responseData['success']) {
     http_response_code(400); // Bad request or invalid data
     echo "Reservation failed: " . htmlspecialchars($responseData['message']);
     exit;
 }
+
+if ($httpCode !== 200 || !$response || !$responseData['success']) {
+    $errorMessage = $responseData['message'] ?? 'Unknown API failure';
+    error_log("❌ Reservation failed: " . $errorMessage);
+
+    if ($_SESSION['reservation_attempts'] < 2) {
+        // Redirect back with error flag
+        header("Location: listappointments.php?retry=1");
+        exit;
+    }
+
+    // Clear the attempt counter after second failure
+    $_SESSION['reservation_attempts'] = 0;
+
+    // Send admin/user emails
+    require_once './email-alerts.php';
+    sendSchedulerFailureEmails($postData, $errorMessage, $reserveData);
+
+    // Show fallback message
+    echo "<p>There seems to be a problem with the scheduler. Someone from our office will contact you shortly.</p>";
+    exit;
+}
+
+
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -207,6 +229,55 @@ try {
     exit;
 }
 
+function sendSchedulerFailureEmails(array $user, string $errorMessage, array $attemptedReservation): void
+{
+    $toAdmin = "admin@glcontainmenttraining.com";
+    $toUser  = filter_var($user['emailAddress'], FILTER_VALIDATE_EMAIL);
+
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();
+    $mail->Host = $_ENV['SMTP_HOST'];
+    $mail->SMTPAuth = true;
+    $mail->Username = $_ENV['SMTP_USERNAME'];
+    $mail->Password = $_ENV['SMTP_PASSWORD'];
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port = $_ENV['SMTP_PORT'];
+    $mail->setFrom($_ENV['SMTP_FROM'], $_ENV['SMTP_FROM_NAME']);
+    $mail->isHTML(true);
+
+    // Admin email
+    $mail->addAddress($toAdmin);
+    $mail->Subject = '⚠️ Scheduler Failure - Appointment Could Not Be Reserved';
+    $mail->Body = "
+        <p><strong>Reservation failed for:</strong></p>
+        <ul>
+            <li>Name: " . htmlspecialchars($user['firstName'] . ' ' . $user['lastName']) . "</li>
+            <li>Email: " . htmlspecialchars($user['emailAddress']) . "</li>
+            <li>Phone: " . htmlspecialchars($user['phoneNumber']) . "</li>
+            <li>Address: " . htmlspecialchars($user['address']) . ", " . htmlspecialchars($user['city']) . ", " . htmlspecialchars($user['state']) . " " . htmlspecialchars($user['zip']) . "</li>
+        </ul>
+        <p><strong>Attempted Appointment:</strong><br>
+        Start: " . htmlspecialchars($attemptedReservation['start']) . "<br>
+        End: " . htmlspecialchars($attemptedReservation['end']) . "</p>
+        <p><strong>API Error:</strong> " . htmlspecialchars($errorMessage) . "</p>
+    ";
+    $mail->send();
+
+    // User email
+    $mail->clearAddresses();
+    if ($toUser) {
+        $mail->addAddress($toUser);
+        $mail->Subject = 'We’re Working On Your Appointment';
+        $mail->Body = "
+            <p>Dear " . htmlspecialchars($user['firstName']) . ",</p>
+            <p>We attempted to reserve your selected appointment, but the scheduler encountered an issue.</p>
+            <p>Our team has been notified and will contact you shortly to finalize your booking.</p>
+            <p>We’re sorry for the inconvenience!</p>
+            <p>- Great Lakes Containment & Training</p>
+        ";
+        $mail->send();
+    }
+}
 
 // Display confirmation message
 ?>
